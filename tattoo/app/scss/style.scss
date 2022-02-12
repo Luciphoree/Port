@@ -1,0 +1,874 @@
+@import "global";
+@import "vars";
+@import "fonts";
+
+
+
+// Верхний хедер ( логотип и навигация)
+.header{
+    &__top{
+        border-bottom: 2px solid #b1b1b1;
+    }
+    &__logo{
+        font-size: 60px;
+        text-transform: uppercase;
+        position: relative;
+        &-word{
+             position: absolute;
+             font-family: 'aviorte_personal_use_onlyRg';
+             top:-93%;
+             right:37%;
+             color: rgba(0, 0, 0, 0.22);
+             font-size: 126px;
+             span{
+                 position: absolute;
+                 left: -54px;
+                 top:-34px;
+             }
+        }
+    }
+    &__list{
+        &-item{
+            font-family: 'gilroy-regular';
+            font-size: 19px;
+            &--two{
+                margin-left: 63px;
+            }
+            &--three{
+                margin-left: 73px;
+            }
+            &--four{
+                margin-left: 82px;
+            }
+            &--five{
+                margin-left: 89px;
+            }
+            a{
+                &:hover{
+                    color: rgb(63, 58, 58);
+                }
+            }
+        }
+    }
+    &__inner{
+        padding: 190px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
+// Верхний хедер ( логотип и навигация) конец
+.header__logo-info{
+    display: block;
+    font-family: 'gilroy-light';
+    font-size: 39.5px;
+    text-transform: none;
+}
+
+
+
+
+
+// Картинка по центру
+.header__intro{
+    padding-top: 25px;
+}
+.header__intro-name{
+    font-family: 'gilroy-light';
+    font-size: 30px;
+}
+.header__middle-logo{
+    font-size: 31px;
+    letter-spacing: 7px;
+}
+
+.image-block{
+    padding-top: 56.4%;
+    height: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    &__name{
+        margin-top: 40px;
+    }
+    img{
+        height: 96.4%;
+        margin-top: 2px;
+        position: absolute;
+        top:0;
+        left: 5%;
+    }
+    &__content{
+        position: absolute;
+        right: 110px;
+        top: 180px;
+        &-name{
+            margin-bottom: 100px;
+            font-family: 'gilroy-regular';
+            max-width: 700px;
+            text-align: right;
+            h1{
+                font-size:75px;
+                color: rgb(255, 255, 255);
+                text-shadow: rgb(233, 69, 69) 5px 5px 25px;
+                text-transform: uppercase;
+            }
+            p{
+                text-align: right;
+                right: 0;
+                font-size: 30px;
+                color: #fff;
+                font-family: 'gilroy-ultralight';
+            }
+        }
+        &-info{
+            text-align: right;
+            font-size: 30px;
+            color: #fff;
+            font-family: 'gilroy-ultralight';
+            
+        }
+    }
+}
+// Картинка по центру конец
+
+//  блок курсы
+.programms{
+    &__title{
+        border-top: 2px solid #b1b1b1;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-family: 'gilroy-regular';
+        font-size: 45px;
+        text-transform: uppercase;
+    }
+    &__inner{
+        &-row{
+            display: flex;
+            justify-content: space-between;
+        }
+        &-row + &-row{
+            margin-top: 50px;
+        }
+    }
+    // Столбцы
+    &__item{
+        border: 1px solid #000;
+        border-radius: 50px;
+        // padding: 70px 50px;
+        padding: 70px 50px 50px 50px;
+        max-width: 750px;
+        width: 100%;
+        display: grid;
+        row-gap: 50px;
+        grid-template-rows: 0.4fr 0.3fr 1fr 0.6fr;
+        // grid-template-rows: 0.7fr 0.5fr 1fr 0.8fr;
+        // Руки
+        &--one{
+            background-repeat: no-repeat;
+            background-size: contain;
+        } 
+
+        // Птица
+        &--two{
+            background-repeat: no-repeat;
+            background-size: 80%;
+            background-position: 250px -20px;
+            .programms__name{
+                span{
+                    line-height: 0.1;
+                }
+            }
+        }
+
+        // Тигр
+        &--three{
+            background-repeat: no-repeat;
+            background-size: 70%;
+            background-position: 240px 50px;
+            .programms__name{
+                // padding-bottom: 320px;
+            }
+        }
+
+        // Дракон
+        &--four{
+            background-repeat: no-repeat;
+            background-size: 70%;
+            background-position: 250px 20px;
+        }
+    }
+    // Столбцы конец
+
+
+
+    // Имя столбца
+    &__name{
+        h3{
+            padding-bottom: 20px;
+            font-family: 'gilroy-semibold';
+            font-size: 50px;
+            line-height: 0.1;
+            span{
+                font-family: 'gilroy-light';
+                font-size: 30px;
+                font-weight: 300;
+                margin-left: -5px;
+            }      
+        }
+        p{
+            font-family: 'gilroy-light';
+            font-size: 30px;
+        }
+        .kurs{
+            line-height: 0.45;
+        }
+        .lesson{
+            margin-top: 35px;
+        }
+        &-title{
+            display: flex;
+            align-items: baseline;
+            .kurs{
+                margin-left: 10px;
+            }
+        }
+    }
+    // Имя столбца конец
+
+
+
+    // Имя первого списка в столбце
+    &__programm-name{
+        font-family: 'gilroy-regular';
+        font-size: 30px;
+    }
+    // Имя первого списка в столбце конец
+
+
+
+    // 1 список в столбце
+    &__programm-list{
+        li{
+            display: block;
+            font-family: 'gilroy-light';
+            font-size: 25px;
+        }
+    }
+    // 1 список в столбце конец
+
+
+
+    // Доп.информация в столбцах между именем и 1 списком( только во 2 и 4 столбце)
+    &__info{
+        font-size: 30px;
+        font-family: 'gilroy-semibold';
+
+    }
+    // Доп.информация конец
+
+
+
+    // 2 список
+    &__bonus{
+        text-align: right;
+        &-name{
+            color: #f56359;
+            font-family: 'gilroy-regular';
+            font-size: 30px;
+            font-weight: 400;
+        }
+        &-list{   
+            li{
+                display: block;
+                font-family: 'gilroy-light';
+                font-size: 25px;
+            }
+        }
+    }
+    // 2 список конец
+
+    // распределение кнопок и цены
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+    // распределение кнопок и цены конец
+
+    // Цена
+    &__price{
+        &-old{
+            font-family: 'gilroy-light';
+            font-size: 35px;
+            background-image: url("../images/linee.png");
+            background-position: -35px 20px;
+            display: inline-block;
+            padding-right: 5px;
+            padding-left: 5px;
+            margin-left: 45px;
+        }
+        &-new{
+            font-family: 'gilroy-semibold';
+            font-size: 50px;
+        }
+    // Цена конец
+
+    }
+    // кнопка записаться
+    &__link{
+        display: inline-block;
+        align-self: center;
+        padding: 20px 60px;
+        border-radius: 35px;
+        background-image: linear-gradient( rgb(238,118,72) 0%, rgb(237,87,75) 100%);
+        font-size: 35px;
+        color: rgb(254, 253, 253);
+        &:hover{
+            background-image: linear-gradient( rgb(228, 121, 79) 0%, rgb(243, 67, 54) 100%);
+        }
+        
+    }
+    // кнопка записаться конец
+}
+
+//  блок курсы конец
+
+
+
+
+// Галлерея начало
+.gallery{
+    &__name{
+        border-top: 2px solid #b1b1b1;
+        margin-top: 150px;
+    }
+    &__name{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 45px;
+        font-family: 'gilroy-regular';
+        span{
+            font-family: 'gilroy-light';
+        }
+    }
+}
+.slider__gallery{
+    &-images{
+        margin-top: 50px;
+    }
+}
+.slider__gallery-item{
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+    img{
+        width: 70%;
+        opacity: 0.56;
+        display: inline-block;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        // margin-top: 150px;
+    }
+    p{
+        display: none;
+        text-align: center;
+        color: #000;
+    }
+}
+.slick-arrow{
+    position: absolute;
+    z-index: 150;
+    height: 40px;
+}
+
+.slick-arrow.slick-prev{
+    left: 30%;
+    cursor: pointer;
+    z-index: 100;
+    background-image: url("../images/gallery/sl-arrow_l.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+}
+.slick-arrow.slick-next{
+    right: 30%;
+    cursor: pointer;
+    z-index: 100;
+    background-image: url("../images/gallery/sl-arrow_r.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.slick-next, .slick-prev button{
+    position: absolute;
+    background-color: transparent;
+}
+.slick-next::before,.slick-prev::before{
+    display: none;
+}
+
+
+
+
+.slider__gallery + .slider__gallery{
+    padding-top: 100px;
+}
+.slick-active{
+    padding-right: 0;
+}
+.slick-center img {
+    width: 100%;
+    border-radius: 50%;
+    margin-top: 100px;
+    // padding-right: 100px;
+    opacity: 1;
+    display: inline-block;
+  }
+.slick-center{
+    padding-bottom: 40px;
+    // margin-top: 150px;
+    text-align: center;
+    margin-top: -160px;
+    // padding-right: 10px;
+    p{
+        display: inline-block;
+        text-align: center;
+        text-transform: uppercase;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top:160px;
+        font-family: 'gilroy-regular';
+        font-size: 25px;
+        color: #000;
+    }
+}  
+
+// Галлерея конец
+
+
+// Учителя начало
+
+.teacher{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    &__wrapper{
+        border-top: 2px solid #b1b1b1;
+    }
+    &__name{
+        padding-top: 75px;
+        padding-bottom: 75px;
+        font-family: 'gilroy-regular';
+        font-size: 45px;
+    }
+    &__one{
+        display: flex;
+        padding: 75px 75px;
+        border: 1px solid #000;
+        border-radius: 25px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    &__one + &__one{
+        margin-top: 50px;
+    }
+    &__two{
+        .teacher__images{
+            order: 1;
+            text-align: right;
+        }
+        .teacher__content{
+            order: 0;
+            text-align: right;
+        }
+    }
+    &__images{
+        max-width: 800px;
+        position: relative;
+
+        img{
+            width: 89%;
+            border-radius: 10%;
+        }
+        &-name{
+            position: absolute;
+            top: -35px;
+            left: 0;
+            font-family: 'gilroy-regular';
+            font-size: 30px;
+            &--right{
+                right: 0;
+            }
+        }
+    }
+    &__content{
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        p{
+            font-size: 25px;
+        }
+        p + p {
+            padding-top: 35px;   
+        }  
+    }
+    &__text{
+        span{
+            font-family: 'gilroy-semibold';
+
+        }
+    }
+    &__info{
+        position: relative;
+        font-family: 'gilroy-ultralight';
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+        }
+        p{
+            font-family: 'gilroy-light';
+            max-width: 587px;
+            text-align: center;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                background-image: url(../images/teachers/quotes.png);
+                width: 100px;
+                height: 71px;
+                right: 25px;
+                bottom: -25px;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                background-image: url(../images/teachers/quotesup.png);
+                width: 100px;
+                height: 71px;
+                left: -20px;
+                top: -40px;
+            }
+
+        }
+    }
+    
+}
+
+// Учителя конец
+
+
+.header__bottom{
+    padding-bottom: 100px;
+    &-name{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-transform: uppercase;
+        font-family: 'gilroy-regular';
+        font-size: 65px;
+        text-align: left;
+    }
+    &-row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 50px;
+        justify-items: center;
+    }
+    &-column{
+        display: grid;
+        grid-row-gap: 25px;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    &-content{
+        position: relative;
+        padding-left: 50px;
+        font-size: 24px;
+        &--buttons{
+            align-self: center;
+        }
+        span{
+            position: absolute;
+            position: absolute;
+            left: -20px;
+            font-family: 'alinea_typefaceregular';
+            color: #ee5c4d;
+            font-size: 140px;
+            transform: translateY(-25%);
+        }
+    }
+    &-small-image{
+        display: none;
+    }
+    &-title{
+        font-family: 'gilroy-bold';
+        font-size: 20px;    
+    }
+    &-buttons-inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border: 2px solid rgb(26, 25, 25);
+        border-radius: 25px;
+        height: 150px;
+    }
+    &-buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+.buttons-title{
+    font-size: 50px;
+    color: #f56359;
+    font-family: 'gilroy-bold';
+}
+.buttons-subtitle{
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: -15px;
+    font-family: 'gilroy-regular';
+    color: #000;
+}
+
+
+.footer{
+    background-image: url(../images/footer/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 50px 0;
+    &__name{
+        text-align: center;
+    }
+    &__logo{
+        font-size: 24px;
+        font-family: 'gilroy-regular';
+        padding-bottom: 86px;
+        &-word{
+            position: absolute;
+            font-family: 'aviorte_personal_use_onlyRg';
+            left: -110%;
+            top: -15%;
+            color: rgba(0, 0, 0, 0.22);
+            font-size: 60px;
+            span{
+                position: absolute;
+                left: 35%;
+                top:-30%;
+            }
+       }
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__col{
+        width: 280px;
+        &--left{
+            max-width: 561px;
+            width: 100%;
+        }
+        &-name{
+            font-size: 36px;
+            line-height: 43px;
+            font-family: 'gilroy-semibold';
+            margin-bottom: 16px;
+            &--contact{
+                margin-bottom: 34px;
+            }
+        }
+        &-tel{
+            font-size: 24px;
+            line-height: 34px;
+            font-family: 'gilroy-semibold';
+            margin-bottom: 15px;
+        }
+        &-icons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.15);
+            border-radius: 37px;
+            padding: 11px 44px;
+            a + a{
+                margin-left: 38px;
+            }
+            a{
+                &:hover{
+                    transform: scale(1.25);
+                }
+            }
+        }
+    }
+    &__list{
+        padding: 16px 24px 15px 50px;
+        background-color: #fff;
+        box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.15);
+        border-radius: 37px;
+        li{
+            display: list-item;
+        }
+        a{
+            font-size: 24px;
+            line-height: 34px;
+            color: #414141;
+            font-family: 'gilroy-semibold';
+            padding-right: 10px;
+        }
+    }
+    &__forms{
+        &-group-top{
+            display: flex;
+            justify-content: space-between;
+        }
+        button{
+            cursor: pointer;
+            margin: 0 auto;
+            display: block;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            font-family: 'gilroy-semibold';
+            background-image: linear-gradient(to left, #ee7748, #ee7548, #ee7348, #ee7149, #ee6f49, #ee6c49, #ee6a49, #ee6749, #ee6349, #ee5f4a, #ed5b4a, #ed574b);
+            border-radius: 42px;
+            color: #fff;
+            padding: 12px 55px;
+            margin-top: 9px;
+            border:none;
+            &:hover{
+                background: linear-gradient(180deg, #ca5f34 0%, #f34d41 100%);
+            }
+        }
+    }
+
+}
+input[placeholder="Ваше имя:"],input[placeholder="Номер телефона"]{
+    width: 271px;
+    border-radius: 24px;
+    background-color: #E2E2E2;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: 'gilroy-medium';
+    color: #000;
+    padding: 15px 10px 15px 20px;
+}
+input[placeholder="Ваше имя:"]::placeholder,
+input[placeholder="Номер телефона"]::placeholder,
+input[placeholder="Ваш вопрос?"]::placeholder{
+    color: #343434;
+}
+input[placeholder="Ваш вопрос?"]{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: 'gilroy-medium';
+    background-color: #E2E2E2;
+    outline: none;
+    border: none;
+    border-radius: 24px;
+    margin-top: 14px;
+    padding: 15px 10px 15px 20px;
+}
+
+
+#popup input[placeholder="Ваше имя:"]{
+    width: 384px;
+    margin-bottom: 29px;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: 'gilroy-medium';
+    color: #343434;
+}
+#popup input[placeholder="Номер телефона"]{
+    width: 384px;
+    display: block;
+    margin-bottom: 41px;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: 'gilroy-medium';
+    color: #343434;
+}
+#popup textarea[placeholder="Ваш вопрос?(не обязательно)"]{
+    width: 583px;
+    height: 235px;
+    background: #E2E2E2;
+    border-radius: 24px;
+    font-size: 24px;
+    line-height: 28px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: 'gilroy-medium';
+    padding: 10px;
+    margin-bottom: 36px;
+}
+#popup textarea[placeholder="Ваш вопрос?(не обязательно)"]::placeholder{
+    color: #343434;
+}
+.block-popup {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background: #F1F1F1;
+    border-radius: 52px;
+    padding: 20px;
+    width: auto;
+    max-width: 1200px;
+    margin: 20px auto;
+    &__images{
+        margin: -20px -20px -24px 0px;
+        img{
+            width: 577px;
+            height: 666px;
+            border-top-right-radius: 52px;
+            border-bottom-right-radius: 52px;
+        }
+    }
+  }
+  .popup-form__title-adaptive.popup-form__button{
+      display: none;
+  }
+  .popup-form{
+    padding-top: 61px;
+    width: 50%;
+      &__button{
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        font-family: 'gilroy-semibold';
+        background: linear-gradient(180deg, #EE7648 0%, #ED574B 100%);
+        border-radius: 42px;
+        color: #fff;
+        padding: 12px 55px;
+        margin-top: 9px;
+        border:none;
+        &:hover{
+            background: linear-gradient(180deg, #ca5f34 0%, #f34d41 100%);
+        }
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media";

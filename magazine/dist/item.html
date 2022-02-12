@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top__wrapper">
+                    <ul class="header-top-list">
+                        <li class="header-top-list__item header-top-list__item--region">
+                            <a href="#open-place" class="header-top-list__link open-place-link">
+                                Ваш регион доставки: <span>Москва</span>
+                            </a>
+                        </li>
+                        <li class="header-top-list__item">
+                            <a href="#" class="header-top-list__link">
+                                Магазины
+                            </a>
+                        </li>
+                        <li class="header-top-list__item">
+                            <a href="#" class="header-top-list__link">
+                                Помощь
+                            </a>
+                        </li>
+                        <li class="header-top-list__item">
+                            <a href="#" class="header-top-list__link">
+                                Блоги
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header-top-list header-top-list--right">
+                        <li class="header-top-list__item header-top-list__item--left">
+                            <a class="header-top-list__link" href="#">Бесплатная доставка *</a>
+                        </li>
+                        <li class="header-top-list__item header-top-list__item--center">
+                            <a class="header-top-list__item__link " href="#">Оплата при получении</a>
+                        </li>
+                        <li class="header-top-list__item__list header-top-list__item--right">
+                            <a class="header-top-list__link " href="#">Возврат в течение 14 дней</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-middle">
+            <div class="container">
+                <div class="header-middle__wrapper header-middle-mobile">
+                    <ul class="header-middle-list">
+                        <li class="header-middle-list__item"><a href="#"
+                                class="header-middle-list__link header-middle-list__link--active">
+                                Мужчинам
+                            </a>
+                        </li>
+                        <li class="header-middle-list__item"><a href="#" class="header-middle-list__link">
+                                Женщинам
+                            </a>
+                        </li>
+                        <li class="header-middle-list__item header-middle-list__item--right"><a href="#"
+                                class="header-middle-list__link">
+                                Детям
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="header-middle-mobile__left">
+                        <div class="header-middle-mobile__burger">
+                            <span></span>
+                        </div>
+                        <svg class="header-middle-mobile__svg header-middle-mobile__svg--search header-middle__user-link--search"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.91429 0C11.2785 0 13.5459 0.939181 15.2176 2.61093C16.8894 4.28269 17.8286 6.55007 17.8286 8.91429C17.8286 11.1223 17.0194 13.152 15.6891 14.7154L16.0594 15.0857H17.1429L24 21.9429L21.9429 24L15.0857 17.1429V16.0594L14.7154 15.6891C13.0979 17.0699 11.041 17.8284 8.91429 17.8286C6.55007 17.8286 4.28269 16.8894 2.61093 15.2176C0.939181 13.5459 0 11.2785 0 8.91429C0 6.55007 0.939181 4.28269 2.61093 2.61093C4.28269 0.939181 6.55007 0 8.91429 0ZM8.91429 2.74286C5.48571 2.74286 2.74286 5.48571 2.74286 8.91429C2.74286 12.3429 5.48571 15.0857 8.91429 15.0857C12.3429 15.0857 15.0857 12.3429 15.0857 8.91429C15.0857 5.48571 12.3429 2.74286 8.91429 2.74286Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <a class="header-middle__logo" href="#">
+                        <img src="images/header/mobile-logo.png" alt="">
+                    </a>
+                    <div class="header-middle__user">
+                        <a href="#registr" class="header-middle__user-link header-middle__user-link--login">
+                            <svg class="header-middle__user-svg" width="24" height="24" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 0C13.5913 0 15.1174 0.632141 16.2426 1.75736C17.3679 2.88258 18 4.4087 18 6C18 7.5913 17.3679 9.11742 16.2426 10.2426C15.1174 11.3679 13.5913 12 12 12C10.4087 12 8.88258 11.3679 7.75736 10.2426C6.63214 9.11742 6 7.5913 6 6C6 4.4087 6.63214 2.88258 7.75736 1.75736C8.88258 0.632141 10.4087 0 12 0ZM12 15C18.63 15 24 17.685 24 21V24H0V21C0 17.685 5.37 15 12 15Z" />
+                            </svg>
+                            <span>Войти</span>
+                        </a>
+                        <a href="#" class="header-middle__user-link header-middle__user-link--favorit">
+                            <svg class="header-middle__user-svg" width="24" height="23" viewBox="0 0 24 23"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.2584 17.8959L12 17.74L11.7416 17.8959L5.33822 21.7608L7.02708 14.4769L7.09507 14.1837L6.86773 13.9864L1.21987 9.08466L8.67096 8.44215L8.9707 8.4163L9.08825 8.13936L12 1.27966L14.9117 8.13936L15.0293 8.4163L15.329 8.44215L22.7786 9.08454L17.1206 13.9861L16.8925 14.1837L16.9611 14.4776L18.6599 21.7596L12.2584 17.8959Z" />
+                            </svg>
+                            <div class="header-middle__user-number">100</div>
+                            <span>Избранное</span>
+                        </a>
+                        <a href="#" class="header-middle__user-link header-middle__user-link--basket">
+                            <svg class="header-middle__user-svg" width="24" height="21" viewBox="0 0 24 21"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.7989 4.79978H6.55409L4.69178 0.703167C4.59644 0.493535 4.44279 0.315766 4.24916 0.191081C4.05554 0.0663969 3.83013 6.37684e-05 3.59983 0H0V2.39989H2.82707L8.5076 14.8961C8.60295 15.1057 8.7566 15.2835 8.95022 15.4082C9.14385 15.5329 9.36926 15.5992 9.59955 15.5993H19.1991C19.6791 15.5993 20.1135 15.3137 20.3019 14.8721L23.9017 6.4725C23.9806 6.29003 24.0128 6.0908 23.9954 5.89277C23.9781 5.69474 23.9117 5.50414 23.8023 5.33818C23.6929 5.17221 23.5439 5.03609 23.3687 4.9421C23.1935 4.8481 22.9977 4.79919 22.7989 4.79978Z" />
+                                <path
+                                    d="M10.1993 20.3991C11.1933 20.3991 11.9991 19.5933 11.9991 18.5992C11.9991 17.6052 11.1933 16.7993 10.1993 16.7993C9.20524 16.7993 8.39941 17.6052 8.39941 18.5992C8.39941 19.5933 9.20524 20.3991 10.1993 20.3991Z" />
+                                <path
+                                    d="M18.5987 20.3991C19.5928 20.3991 20.3987 19.5933 20.3987 18.5992C20.3987 17.6052 19.5928 16.7993 18.5987 16.7993C17.6047 16.7993 16.7988 17.6052 16.7988 18.5992C16.7988 19.5933 17.6047 20.3991 18.5987 20.3991Z" />
+                            </svg>
+                            <div class="header-middle__user-number">25</div>
+                            <span>Корзина</span>
+                        </a>
+                        <a href="#" class="header-middle__user-link header-middle__user-link--search">
+                            <svg class="header-middle__user-svg" width="24" height="24" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.91429 0C11.2785 0 13.5459 0.939181 15.2176 2.61093C16.8894 4.28269 17.8286 6.55007 17.8286 8.91429C17.8286 11.1223 17.0194 13.152 15.6891 14.7154L16.0594 15.0857H17.1429L24 21.9429L21.9429 24L15.0857 17.1429V16.0594L14.7154 15.6891C13.0979 17.0699 11.041 17.8284 8.91429 17.8286C6.55007 17.8286 4.28269 16.8894 2.61093 15.2176C0.939181 13.5459 0 11.2785 0 8.91429C0 6.55007 0.939181 4.28269 2.61093 2.61093C4.28269 0.939181 6.55007 0 8.91429 0ZM8.91429 2.74286C5.48571 2.74286 2.74286 5.48571 2.74286 8.91429C2.74286 12.3429 5.48571 15.0857 8.91429 15.0857C12.3429 15.0857 15.0857 12.3429 15.0857 8.91429C15.0857 5.48571 12.3429 2.74286 8.91429 2.74286Z" />
+                            </svg>
+                            <span>Поиск</span>
+                        </a>
+                    </div>
+                    <div class="header-middle-mobile__right">
+                        <div class="header-middle-mobile__right-svgs">
+                            <svg width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.2584 17.8959L12 17.74L11.7416 17.8959L5.33822 21.7608L7.02708 14.4769L7.09507 14.1837L6.86773 13.9864L1.21987 9.08466L8.67096 8.44215L8.9707 8.4163L9.08825 8.13936L12 1.27966L14.9117 8.13936L15.0293 8.4163L15.329 8.44215L22.7786 9.08454L17.1206 13.9861L16.8925 14.1837L16.9611 14.4776L18.6599 21.7596L12.2584 17.8959Z"
+                                    fill="#333333" stroke="black" />
+                            </svg>
+                            <svg width="24" height="21" viewBox="0 0 24 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.7989 4.79978H6.55409L4.69178 0.703167C4.59644 0.493535 4.44279 0.315766 4.24916 0.191081C4.05554 0.0663969 3.83013 6.37684e-05 3.59983 0H0V2.39989H2.82707L8.5076 14.8961C8.60295 15.1057 8.7566 15.2835 8.95022 15.4082C9.14385 15.5329 9.36926 15.5992 9.59955 15.5993H19.1991C19.6791 15.5993 20.1135 15.3137 20.3019 14.8721L23.9017 6.4725C23.9806 6.29003 24.0128 6.0908 23.9954 5.89277C23.9781 5.69474 23.9117 5.50414 23.8023 5.33818C23.6929 5.17221 23.5439 5.03609 23.3687 4.9421C23.1935 4.8481 22.9977 4.79919 22.7989 4.79978Z"
+                                    fill="black" />
+                                <path
+                                    d="M10.1993 20.3991C11.1933 20.3991 11.9991 19.5933 11.9991 18.5992C11.9991 17.6052 11.1933 16.7993 10.1993 16.7993C9.20524 16.7993 8.39941 17.6052 8.39941 18.5992C8.39941 19.5933 9.20524 20.3991 10.1993 20.3991Z"
+                                    fill="black" />
+                                <path
+                                    d="M18.5987 20.3991C19.5928 20.3991 20.3987 19.5933 20.3987 18.5992C20.3987 17.6052 19.5928 16.7993 18.5987 16.7993C17.6047 16.7993 16.7988 17.6052 16.7988 18.5992C16.7988 19.5933 17.6047 20.3991 18.5987 20.3991Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <div class="header-middle-mobile__categorys">
+                            <div class="header-middle-mobile__categorys-category">Мужчинам</div>
+                            <div class="header-middle-mobile__categorys-category">Женщанам</div>
+                            <div class="header-middle-mobile__categorys-category">Детям</div>
+                        </div>
+                    </div>
+                    <div class="header-middle__search">
+                        <form action="">
+                            <div class="header-middle__form-search">
+                                <input type="search" placeholder="Поиск">
+                                <div class="header-middle__form-search-buttons">
+                                    <button class="header-middle__form-search-search" type="submit">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.91429 0C11.2785 0 13.5459 0.939181 15.2176 2.61093C16.8894 4.28269 17.8286 6.55007 17.8286 8.91429C17.8286 11.1223 17.0194 13.152 15.6891 14.7154L16.0594 15.0857H17.1429L24 21.9429L21.9429 24L15.0857 17.1429V16.0594L14.7154 15.6891C13.0979 17.0699 11.041 17.8284 8.91429 17.8286C6.55007 17.8286 4.28269 16.8894 2.61093 15.2176C0.939181 13.5459 0 11.2785 0 8.91429C0 6.55007 0.939181 4.28269 2.61093 2.61093C4.28269 0.939181 6.55007 0 8.91429 0ZM8.91429 2.74286C5.48571 2.74286 2.74286 5.48571 2.74286 8.91429C2.74286 12.3429 5.48571 15.0857 8.91429 15.0857C12.3429 15.0857 15.0857 12.3429 15.0857 8.91429C15.0857 5.48571 12.3429 2.74286 8.91429 2.74286Z"
+                                                fill="black" />
+                                        </svg>
+
+                                    </button>
+                                    <button class="header-middle__form-search-close" type="submit">
+                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14 1.54634L12.59 0L7 6.13053L1.41 0L0 1.54634L5.59 7.67687L0 13.8074L1.41 15.3537L7 9.22321L12.59 15.3537L14 13.8074L8.41 7.67687L14 1.54634Z"
+                                                fill="black" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="header-middle-mobile">
+                    <div class="header-middle-mobile__wrapper">
+                        <div class="header-middle-mobile__left">
+                            <div class="header-middle-mobile__burger">
+                                <span></span>
+                            </div>
+                            <svg class="header-middle-mobile__svg header-middle-mobile__svg--search" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.91429 0C11.2785 0 13.5459 0.939181 15.2176 2.61093C16.8894 4.28269 17.8286 6.55007 17.8286 8.91429C17.8286 11.1223 17.0194 13.152 15.6891 14.7154L16.0594 15.0857H17.1429L24 21.9429L21.9429 24L15.0857 17.1429V16.0594L14.7154 15.6891C13.0979 17.0699 11.041 17.8284 8.91429 17.8286C6.55007 17.8286 4.28269 16.8894 2.61093 15.2176C0.939181 13.5459 0 11.2785 0 8.91429C0 6.55007 0.939181 4.28269 2.61093 2.61093C4.28269 0.939181 6.55007 0 8.91429 0ZM8.91429 2.74286C5.48571 2.74286 2.74286 5.48571 2.74286 8.91429C2.74286 12.3429 5.48571 15.0857 8.91429 15.0857C12.3429 15.0857 15.0857 12.3429 15.0857 8.91429C15.0857 5.48571 12.3429 2.74286 8.91429 2.74286Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <a href="#" class="header-middle-mobile__logo">
+                            <img src="images/header/mobile-logo.png" alt="">
+                        </a>
+                        <div class="header-middle-mobile__right">
+                            <div class="header-middle-mobile__right-svgs">
+                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.2584 17.8959L12 17.74L11.7416 17.8959L5.33822 21.7608L7.02708 14.4769L7.09507 14.1837L6.86773 13.9864L1.21987 9.08466L8.67096 8.44215L8.9707 8.4163L9.08825 8.13936L12 1.27966L14.9117 8.13936L15.0293 8.4163L15.329 8.44215L22.7786 9.08454L17.1206 13.9861L16.8925 14.1837L16.9611 14.4776L18.6599 21.7596L12.2584 17.8959Z"
+                                        fill="#333333" stroke="black" />
+                                </svg>
+                                <svg width="24" height="21" viewBox="0 0 24 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22.7989 4.79978H6.55409L4.69178 0.703167C4.59644 0.493535 4.44279 0.315766 4.24916 0.191081C4.05554 0.0663969 3.83013 6.37684e-05 3.59983 0H0V2.39989H2.82707L8.5076 14.8961C8.60295 15.1057 8.7566 15.2835 8.95022 15.4082C9.14385 15.5329 9.36926 15.5992 9.59955 15.5993H19.1991C19.6791 15.5993 20.1135 15.3137 20.3019 14.8721L23.9017 6.4725C23.9806 6.29003 24.0128 6.0908 23.9954 5.89277C23.9781 5.69474 23.9117 5.50414 23.8023 5.33818C23.6929 5.17221 23.5439 5.03609 23.3687 4.9421C23.1935 4.8481 22.9977 4.79919 22.7989 4.79978Z"
+                                        fill="black" />
+                                    <path
+                                        d="M10.1993 20.3991C11.1933 20.3991 11.9991 19.5933 11.9991 18.5992C11.9991 17.6052 11.1933 16.7993 10.1993 16.7993C9.20524 16.7993 8.39941 17.6052 8.39941 18.5992C8.39941 19.5933 9.20524 20.3991 10.1993 20.3991Z"
+                                        fill="black" />
+                                    <path
+                                        d="M18.5987 20.3991C19.5928 20.3991 20.3987 19.5933 20.3987 18.5992C20.3987 17.6052 19.5928 16.7993 18.5987 16.7993C17.6047 16.7993 16.7988 17.6052 16.7988 18.5992C16.7988 19.5933 17.6047 20.3991 18.5987 20.3991Z"
+                                        fill="black" />
+                                </svg>
+                            </div>
+                            <div class="header-middle-mobile__categorys">
+                                <div class="header-middle-mobile__categorys-category">Мужчинам</div>
+                                <div class="header-middle-mobile__categorys-category">Женщанам</div>
+                                <div class="header-middle-mobile__categorys-category">Детям</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <aside class="header-mobile-aside">
+                    <nav class="header-mobile-aside__nav">
+                        <ul class="header-mobile-aside__list">
+                            <li class="header-mobile-aside__list-item">
+                                <a class="header-mobile-aside__list-link" href="#">Коллекции</a>
+                                <ul class="header-mobile-aside__sublist">
+                                    <li class="header-mobile-aside__sublist-item">
+                                        <a href="#" class="header-mobile-aside__sublist-link">
+                                            <div class="header-mobile-aside__sublist-title header__subtitle">
+                                                Категории
+                                                <div>Новая коллекция</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Майки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Джинсы и брюки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Верхняя одежда</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Рубашки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Кардиганы,свитеры и джемперы</a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Толстовки и флис</a></li>
+                                    <li class="header-mobile-aside__sublist-item">
+                                        <a href="#" class="header-mobile-aside__sublist-link">
+                                            <div class="header-mobile-aside__sublist-title header__subtitle">
+                                                Бренды
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Quicksilver</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">DC Shoes</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Billabong</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Element</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">RVCA</a></li>
+                                </ul>
+                            </li>
+                            <li class="header-mobile-aside__list-item">
+                                <a class="header-mobile-aside__list-link" href="#">Обувь</a>
+                                <ul class="header-mobile-aside__sublist">
+                                    <li class="header-mobile-aside__sublist-item">
+                                        <a href="#" class="header-mobile-aside__sublist-link">
+                                            <div class="header-mobile-aside__sublist-title header__subtitle">
+                                                Категории
+                                                <div>Новая коллекция</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Майки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Джинсы и брюки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Верхняя одежда</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Рубашки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Кардиганы,свитеры и джемперы</a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Толстовки и флис</a></li>
+                                    <li class="header-mobile-aside__sublist-item">
+                                        <a href="#" class="header-mobile-aside__sublist-link">
+                                            <div class="header-mobile-aside__sublist-title header__subtitle">
+                                                Бренды
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Quicksilver</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">DC Shoes</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Billabong</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Element</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">RVCA</a></li>
+                                </ul>
+                            </li>
+                            <li class="header-mobile-aside__list-item">
+                                <a class="header-mobile-aside__list-link" href="#">Одежда</a>
+                                <ul class="header-mobile-aside__sublist">
+                                    <li class="header-mobile-aside__sublist-item">
+                                        <a href="#" class="header-mobile-aside__sublist-link">
+                                            <div class="header-mobile-aside__sublist-title header__subtitle">
+                                                Категории
+                                                <div>Новая коллекция</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Майки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Джинсы и брюки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Верхняя одежда</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Рубашки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Кардиганы,свитеры и джемперы</a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Толстовки и флис</a></li>
+                                    <li class="header-mobile-aside__sublist-item">
+                                        <a href="#" class="header-mobile-aside__sublist-link">
+                                            <div class="header-mobile-aside__sublist-title header__subtitle">
+                                                Бренды
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Quicksilver</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">DC Shoes</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Billabong</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Element</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">RVCA</a></li>
+                                </ul>
+                            </li>
+                            <li class="header-mobile-aside__list-item">
+                                <a class="header-mobile-aside__list-link" href="#">Аксессуары</a>
+                                <ul class="header-mobile-aside__sublist">
+                                    <li class="header-mobile-aside__sublist-item">
+                                        <a href="#" class="header-mobile-aside__sublist-link">
+                                            <div class="header-mobile-aside__sublist-title header__subtitle">
+                                                Категории
+                                                <div>Новая коллекция</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Майки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Джинсы и брюки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Верхняя одежда</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Рубашки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Кардиганы,свитеры и джемперы</a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Толстовки и флис</a></li>
+                                    <li class="header-mobile-aside__sublist-item">
+                                        <a href="#" class="header-mobile-aside__sublist-link">
+                                            <div class="header-mobile-aside__sublist-title header__subtitle">
+                                                Бренды
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Quicksilver</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">DC Shoes</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Billabong</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Element</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">RVCA</a></li>
+                                </ul>
+                            </li>
+                            <li class="header-mobile-aside__list-item">
+                                <a class="header-mobile-aside__list-link" href="#">Сноуборд</a>
+                                <ul class="header-mobile-aside__sublist">
+                                    <li class="header-mobile-aside__sublist-item">
+                                        <a href="#" class="header-mobile-aside__sublist-link">
+                                            <div class="header-mobile-aside__sublist-title header__subtitle">
+                                                Категории
+                                                <div>Новая коллекция</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Майки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Джинсы и брюки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Верхняя одежда</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Рубашки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Кардиганы,свитеры и джемперы</a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Толстовки и флис</a></li>
+                                    <li class="header-mobile-aside__sublist-item">
+                                        <a href="#" class="header-mobile-aside__sublist-link">
+                                            <div class="header-mobile-aside__sublist-title header__subtitle">
+                                                Бренды
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Quicksilver</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">DC Shoes</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Billabong</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Element</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">RVCA</a></li>
+                                </ul>
+                            </li>
+                            <li class="header-mobile-aside__list-item">
+                                <a class="header-mobile-aside__list-link" href="#">Скейтборд</a>
+                                <ul class="header-mobile-aside__sublist">
+                                    <li class="header-mobile-aside__sublist-item">
+                                        <a href="#" class="header-mobile-aside__sublist-link">
+                                            <div class="header-mobile-aside__sublist-title header__subtitle">
+                                                Категории
+                                                <div>Новая коллекция</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Майки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Джинсы и брюки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Верхняя одежда</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Рубашки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Кардиганы,свитеры и джемперы</a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Толстовки и флис</a></li>
+                                    <li class="header-mobile-aside__sublist-item">
+                                        <a href="#" class="header-mobile-aside__sublist-link">
+                                            <div class="header-mobile-aside__sublist-title header__subtitle">
+                                                Бренды
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Quicksilver</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">DC Shoes</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Billabong</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Element</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">RVCA</a></li>
+                                </ul>
+                            </li>
+                            <li class="header-mobile-aside__list-item">
+                                <a class="header-mobile-aside__list-link" href="#">Туризм</a>
+                                <ul class="header-mobile-aside__sublist">
+                                    <li class="header-mobile-aside__sublist-item">
+                                        <a href="#" class="header-mobile-aside__sublist-link">
+                                            <div class="header-mobile-aside__sublist-title header__subtitle">
+                                                Категории
+                                                <div>Новая коллекция</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Майки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Джинсы и брюки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Верхняя одежда</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Рубашки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Кардиганы,свитеры и джемперы</a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Толстовки и флис</a></li>
+                                    <li class="header-mobile-aside__sublist-item">
+                                        <a href="#" class="header-mobile-aside__sublist-link">
+                                            <div class="header-mobile-aside__sublist-title header__subtitle">
+                                                Бренды
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Quicksilver</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">DC Shoes</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Billabong</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Element</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">RVCA</a></li>
+                                </ul>
+                            </li>
+                            <li class="header-mobile-aside__list-item">
+                                <a class="header-mobile-aside__list-link" href="#">Фитнес и бег</a>
+                                <ul class="header-mobile-aside__sublist">
+                                    <li class="header-mobile-aside__sublist-item">
+                                        <a href="#" class="header-mobile-aside__sublist-link">
+                                            <div class="header-mobile-aside__sublist-title header__subtitle">
+                                                Категории
+                                                <div>Новая коллекция</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Майки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Джинсы и брюки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Верхняя одежда</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Рубашки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Кардиганы,свитеры и джемперы</a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Толстовки и флис</a></li>
+                                    <li class="header-mobile-aside__sublist-item">
+                                        <a href="#" class="header-mobile-aside__sublist-link">
+                                            <div class="header-mobile-aside__sublist-title header__subtitle">
+                                                Бренды
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Quicksilver</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">DC Shoes</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Billabong</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Element</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">RVCA</a></li>
+                                </ul>
+                            </li>
+                            <li class="header-mobile-aside__list-item">
+                                <a class="header-mobile-aside__list-link" href="#">Серф и вейкборд</a>
+                                <ul class="header-mobile-aside__sublist">
+                                    <li class="header-mobile-aside__sublist-item">
+                                        <a href="#" class="header-mobile-aside__sublist-link">
+                                            <div class="header-mobile-aside__sublist-title header__subtitle">
+                                                Категории
+                                                <div>Новая коллекция</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Майки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Джинсы и брюки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Верхняя одежда</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Рубашки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Кардиганы,свитеры и джемперы</a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Толстовки и флис</a></li>
+                                    <li class="header-mobile-aside__sublist-item">
+                                        <a href="#" class="header-mobile-aside__sublist-link">
+                                            <div class="header-mobile-aside__sublist-title header__subtitle">
+                                                Бренды
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Quicksilver</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">DC Shoes</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Billabong</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Element</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">RVCA</a></li>
+                                </ul>
+                            </li>
+                            <li class="header-mobile-aside__list-item">
+                                <a class="header-mobile-aside__list-link" href="#">Распродажа</a>
+                                <ul class="header-mobile-aside__sublist">
+                                    <li class="header-mobile-aside__sublist-item">
+                                        <a href="#" class="header-mobile-aside__sublist-link">
+                                            <div class="header-mobile-aside__sublist-title header__subtitle">
+                                                Категории
+                                                <div>Новая коллекция</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Майки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Джинсы и брюки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Верхняя одежда</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Рубашки</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Кардиганы,свитеры и джемперы</a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Толстовки и флис</a></li>
+                                    <li class="header-mobile-aside__sublist-item">
+                                        <a href="#" class="header-mobile-aside__sublist-link">
+                                            <div class="header-mobile-aside__sublist-title header__subtitle">
+                                                Бренды
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Quicksilver</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">DC Shoes</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Billabong</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">Element</a></li>
+                                    <li class="header-mobile-aside__sublist-item"><a href="#"
+                                            class="header-mobile-aside__sublist-link">RVCA</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item">
+                            <a class="header-nav__item-link" href="#">
+                                Новинки
+                                <div class="header-submenu">
+                                    <div class="container">
+                                        <div class="header-submenu__wrapper">
+                                            <div class="header-submenu__column">
+                                                <div class="header-submenu__column-name header__subtitle">
+                                                    Категории
+                                                </div>
+                                                <ul class="header-submenu__list">
+                                                    <li class="header-submenu__list-item"><a href="#">Новая
+                                                            коллекция</a></li>
+                                                    <li class="header-submenu__list-item"><a href="#">Adventure
+                                                            Division</a></li>
+                                                    <li class="header-submenu__list-item"><a href="#">DC Black
+                                                            Sabbath</a></li>
+                                                    <li class="header-submenu__list-item"><a href="#">Billabong
+                                                            Adventure Division</a></li>
+                                                    <li class="header-submenu__list-item"><a href="#">Element x
+                                                            Timber</a></li>
+                                                    <li class="header-submenu__list-item"><a href="#">Element Planets of
+                                                            the Apes</a></li>
+                                                    <li class="header-submenu__list-item"><a href="#">Quicksilver
+                                                            Outdoor</a></li>
+                                                    <li class="header-submenu__list-item"><a href="#">Billabong x
+                                                            Budweiser</a></li>
+                                                    <li class="header-submenu__list-item"><a href="#">Element Hotel
+                                                            Radio Paris</a></li>
+                                                    <li class="header-submenu__list-item"><a href="#">Element
+                                                            Wolfeboro</a></li>
+                                                    <li class="header-submenu__list-item"><a href="#">DC Shoes Bob's
+                                                            Burgers</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="header-submenu__column header-submenu__column--two">
+                                                <div class="header-submenu__column-list">
+                                                    <div class="header-submenu__column-name header__subtitle">
+                                                        Бренды
+                                                    </div>
+                                                    <ul class="header-submenu__list">
+                                                        <li class="header-submenu__list-item"><a
+                                                                href="#">Quicksilver</a></li>
+                                                        <li class="header-submenu__list-item"><a href="#">DC Shoes</a>
+                                                        </li>
+                                                        <li class="header-submenu__list-item"><a href="#">Billabong</a>
+                                                        </li>
+                                                        <li class="header-submenu__list-item"><a href="#">Element</a>
+                                                        </li>
+                                                        <li class="header-submenu__list-item"><a href="#">Roxy</a></li>
+                                                        <li class="header-submenu__list-item"><a href="#">RVCA</a></li>
+                                                        <li class="header-submenu__list-item"><a href="#">WSD</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="header-submenu__column-promo">
+                                                    <figure>
+                                                        <img src="images/submenu-promo/small.jpg" alt="">
+                                                        <figcaption>
+                                                            Element x Timber!
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="header-nav__item-link" href="#">
+                                Сноуборд
+                                <div class="header-submenu">
+                                    <div class="container">
+                                        <div class="header-submenu__wrapper">
+                                            <div class="header-submenu__column">
+                                                <div class="header-submenu__column-name header__subtitle">
+                                                    Категории
+                                                </div>
+                                                <ul class="header-submenu__list">
+                                                    <li class="header-submenu__list-item"><a href="#">Новая
+                                                            коллекция</a></li>
+                                                    <li class="header-submenu__list-item"><a href="#">Adventure
+                                                            Division</a></li>
+                                                    <li class="header-submenu__list-item"><a href="#">DC Black
+                                                            Sabbath</a></li>
+                                                    <li class="header-submenu__list-item"><a href="#">Billabong
+                                                            Adventure Division</a></li>
+                                                    <li class="header-submenu__list-item"><a href="#">Element x
+                                                            Timber</a></li>
+                                                    <li class="header-submenu__list-item"><a href="#">Element Planets of
+                                                            the Apes</a></li>
+                                                    <li class="header-submenu__list-item"><a href="#">Quicksilver
+                                                            Outdoor</a></li>
+                                                    <li class="header-submenu__list-item"><a href="#">Billabong x
+                                                            Budweiser</a></li>
+                                                    <li class="header-submenu__list-item"><a href="#">Element Hotel
+                                                            Radio Paris</a></li>
+                                                    <li class="header-submenu__list-item"><a href="#">Element
+                                                            Wolfeboro</a></li>
+                                                    <li class="header-submenu__list-item"><a href="#">DC Shoes Bob's
+                                                            Burgers</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="header-submenu__column header-submenu__column--two">
+                                                <div class="header-submenu__column-list">
+                                                    <div class="header-submenu__column-name header__subtitle">
+                                                        Бренды
+                                                    </div>
+                                                    <ul class="header-submenu__list">
+                                                        <li class="header-submenu__list-item"><a
+                                                                href="#">Quicksilver</a></li>
+                                                        <li class="header-submenu__list-item"><a href="#">DC Shoes</a>
+                                                        </li>
+                                                        <li class="header-submenu__list-item"><a href="#">Billabong</a>
+                                                        </li>
+                                                        <li class="header-submenu__list-item"><a href="#">Element</a>
+                                                        </li>
+                                                        <li class="header-submenu__list-item"><a href="#">Roxy</a></li>
+                                                        <li class="header-submenu__list-item"><a href="#">RVCA</a></li>
+                                                        <li class="header-submenu__list-item"><a href="#">WSD</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="header-submenu__column-promo">
+                                                    <figure>
+                                                        <img src="images/submenu-promo/small.jpg" alt="">
+                                                        <figcaption>
+                                                            Element x Timber!
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="header-nav__item-link" href="#">
+                                Лыжи
+                            </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="header-nav__item-link" href="#">
+                                Скейт
+                            </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="header-nav__item-link" href="#">
+                                Лонгборд
+                            </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="header-nav__item-link" href="#">
+                                Вейкборд
+                            </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="header-nav__item-link" href="#">
+                                Серф
+                            </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="header-nav__item-link" href="#">
+                                Sup
+                            </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="header-nav__item-link" href="#">
+                                Одежда
+                            </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="header-nav__item-link" href="#">
+                                Обувь
+                            </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="header-nav__item-link" href="#">
+                                Аксессуары
+                            </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="header-nav__item-link" href="#">
+                                Бренды
+                            </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="header-nav__item-link" href="#">
+                                <span>Распродажа</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header-overlay">
+
+        </div>
+    </header>
+
+
+    <main>
+        <section class="product">
+            <div class="container">
+                <div class="breadcrumps">
+                    <ul class="breadcrumps__list catalog-intro__breadcrumps">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Одежда</a></li>
+                        <li><a href="#">Футболка</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="product__wrapper">
+                    <div class="product__rows">
+                        <div class="product-images product__wrapper-images">
+                            <div class="product-images__row">
+                                <div class="product-images__column">
+                                    <a href="#gallery" class="gallery-link">
+                                        <div class="product-images__column-image"
+                                            style="background-image: url(images/product-item/product/one-full.webp);">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-images__column">
+                                    <a href="#gallery" class="gallery-link">
+                                        <div class="product-images__column-image"
+                                            style="background-image: url(images/product-item/product/one-small.webp);">
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-images__column product-images__column--slider">
+                                    <a href="#gallery" class="gallery-link">
+                                        <div class="product-images__column-image"
+                                            style="background-image: url(images/product-item/product/one-full.webp);">
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-images__column product-images__column--slider">
+                                    <a href="#gallery" class="gallery-link">
+                                        <div class="product-images__column-image"
+                                            style="background-image: url(images/product-item/product/one-small.webp);">
+
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <aside class="product-aside product__wrapper-aside">
+                            <div class="product-aside__about">
+                                <div class="product-aside__about-article">
+                                    Артикул производителя: U1SSH2-ELF0-3732
+                                </div>
+                                <div class="product-aside__about-reviews">
+                                    <div class="product-aside__about-reviews-brand">
+                                        <img src="images/product-item/brands/one.png" alt="">
+                                    </div>
+                                    <div class="stars-ready product-aside__about-reviews-rating">
+                                        <div class="stars-ready__items">
+
+                                        </div>
+                                    </div>
+                                    <a class="product-aside__about-allreviews" href="#">2 отзыва</a>
+                                    <div class="product-aside__about-reviews-favor">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20" cy="20" r="19.5" fill="white" stroke="black" />
+                                            <path
+                                                d="M20.2681 24.6517L20 24.4813L19.7319 24.6517L14.567 27.933L15.9383 21.7076L16.0004 21.4256L15.7872 21.2309L11.1742 17.0165L17.2352 16.4664L17.5395 16.4388L17.6537 16.1554L20 10.3369L22.3463 16.1554L22.4605 16.4388L22.7648 16.4664L28.8244 17.0164L24.2031 21.2305L23.9892 21.4256L24.0518 21.7082L25.4311 27.9319L20.2681 24.6517Z"
+                                                stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="product-aside__about-name">
+                                    Мужская футболка Timber! The Remains I Heart
+                                </div>
+                                <div
+                                    class="product-aside__about-price product-aside__about-price--new product-aside__about-price--sale">
+                                    <div class="product-aside__about-price-sales">
+                                        <div class="product-aside__about-price-sales-sale">
+                                            -50%
+                                        </div>
+                                        <div class="product-aside__about-price-sales-sale">
+                                            -50%
+                                        </div>
+                                    </div>
+                                    <div class="product-aside__about-price-new">
+                                        1325 Р
+                                    </div>
+                                    <div class="product-aside__about-price-old">
+                                        2650 Р
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-aside__colors">
+                                <div class="product-aside__colors-name">
+                                    Цвет: черный
+                                </div>
+                                <div class="product-aside__colors-images">
+                                    <div class="product-aside__colors-images-image">
+                                        <img src="images/product-item/colors/o-color-one.jpg" alt="">
+                                    </div>
+                                    <div class="product-aside__colors-images-image">
+                                        <img src="images/product-item/colors/o-color-two.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-aside__size">
+                                <div class="product-aside__size-name">
+                                    <div class="product-aside__size-title">
+                                        Выберите размер (INT)
+                                    </div>
+                                    <a class="product-aside__size-table" href="#">Таблица размеров</a>
+                                </div>
+                                <form action="#">
+                                    <div class="product-aside__size-sizes">
+                                        <label class="disabled">
+                                            <input type="radio" name="one">
+                                            <span>XS</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="one">
+                                            <span>S</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="one">
+                                            <span>M</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="one">
+                                            <span>L</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="one">
+                                            <span>XL</span>
+                                        </label>
+                                    </div>
+                            </div>
+                            </form>
+                    </div>
+                    </aside>
+                </div>
+
+                <div class="product__rows">
+                    <div class="product-images__content">
+                        <div class="product-images__commentary">
+                            <div class="product-images__commentary-title">
+                                <div class="stars-ready product-images__commentary-stars">
+                                    <div class="stars-ready__items">
+
+                                    </div>
+                                </div>
+                                <div class="product-images__commentary-name">
+                                    Александр
+                                </div>
+                                <a href="#" class="product-images__commentary-all">
+                                    Все отзывы
+                                </a>
+                            </div>
+                            <div class="product-images__commentary-content">
+                                <div class="product-images__commentary-date">
+                                    14 октября
+                                </div>
+                                <div class="product-images__commentary-comment">
+                                    <p>Классная футболка</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-images__descr">
+                            <div class="product-images__descr-title">
+                                Характеристики
+                            </div>
+                            <ul class="product-images__descr-list">
+                                <li>Джерси из органического хлопка</li>
+                                <li>Джерси из органического хлопка</li>
+                                <li>Джерси из органического хлопка</li>
+                            </ul>
+                            <div class="product-images__descr-bottom">
+                                Состав: 100% хлопок
+                            </div>
+                        </div>
+                        <div class="product-images__descrlists">
+                            <ul class="product-images__descrlists-list">
+                                <li>
+                                    <div>Артикул производителя:</div>
+                                    <div>U1SSH2-ELF0-3732</div>
+                                </li>
+                                <li>
+                                    <div>Цвет:</div>
+                                    <div>черный</div>
+                                </li>
+                                <li>
+                                    <div>Сезон:</div>
+                                    <div>мульти</div>
+                                </li>
+                                <li>
+                                    <div>Коллекция:</div>
+                                    <div><a href="#">Element Timber Collection</a></div>
+                                </li>
+                            </ul>
+                            <ul class="product-images__descrlists-list">
+                                <li>
+                                    <div>Артикул товара:</div>
+                                    <div>1312099</div>
+                                </li>
+                                <li>
+                                    <div>Фасон:</div>
+                                    <div>regular fit</div>
+                                </li>
+                                <li>
+                                    <div>Принт:</div>
+                                    <div>с принтом</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <aside class="product-aside">
+                        <a class="product-aside__add" href="#">
+                            Добавить в корзину
+                        </a>
+                        <div class="product-aside__delivery">
+                            <div class="product-aside__delivery-title">
+                                Варианты доставки в <a href="#">г.Москва</a>
+                            </div>
+                            <div class="product-aside__delivery-info">
+                                <div class="product-aside__delivery-info-item">
+                                    <div class="product-aside__delivery-info-item-title">
+                                        Курьером по вашему адресу
+                                    </div>
+                                    <div class="product-aside__delivery-info-item-subtitle">
+                                        Доставка в течение 1-3 дней / 299 руб
+                                    </div>
+                                </div>
+                                <div class="product-aside__delivery-info-item product-aside__delivery-info-item--loc">
+                                    <div class="product-aside__delivery-info-item-title">
+                                        Забрать из <a href="#">пункта самовывоза</a> с примеркой
+                                    </div>
+                                    <div class="product-aside__delivery-info-item-subtitle">
+                                        Доставка в течение 3-4 дней / 250 руб
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-aside__pay">
+                            <div class="product-aside__pay-title">
+                                Варианты оплаты
+                            </div>
+                            <div class="product-aside__pay-items">
+                                <div class="product-aside__pay-items-item product-aside__pay-items-item--card">
+                                    Картой на сайте
+                                </div>
+                                <div class="product-aside__pay-items-item">
+                                    Наличными
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </aside>
+            </div>
+            </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer-top">
+                    <a class="footer-top__logo" href="#">
+                        <img src="images/footer/logo.png" alt="">
+                        <img class="footer-top__logo-text" src="images/footer/text-logo.png" alt="">
+                    </a>
+                    <form class="footer-top__input">
+                        <input class="footer-top__input-input" type="text" placeholder="">
+                        <a class="footer-top__input-link" href="#">
+                            Подпишись на рассылку и получи <span>-10%</span> скидку
+                        </a>
+                        <button class="footer-top__button">
+                            <svg width="22" height="19" viewBox="0 0 22 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 19V11.6276L15.7143 9.5L0 7.3724V0L22 9.5L0 19Z" fill="white" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="footer-middle">
+                    <div class="footer-middle__column footer-middle__column--one">
+                        <div class="footer-middle__item footer-middle__item--one">
+                            <div class="footer-middle__item-wrapper">
+                                <div class="footer-middle__item-title footer__title">
+                                    Доступ к ранним релизам в приложении
+                                </div>
+                                <div class="footer-middle__item-content">
+                                    <div class="footer-middle__item-mobile">
+                                        <a href="#">
+                                            <img src="images/footer/app.png" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="images/footer/google.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="footer-middle__item-qr">
+                                        <img src="images/footer/qr.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-middle__item footer-lists footer-middle__item--two">
+                            <div class="footer-middle__item-wrapper">
+                                <div class="footer-middle__item-title footer__title">
+                                    Контакты
+                                </div>
+                                <ul class="footer-lists__list footer-lists__list--contacts">
+                                    <li class="footer-lists__list-item footer-lists__list-item--tel">
+                                        <a href="#">8 (800) 511-74-68</a>
+                                    </li>
+                                    <li class="footer-lists__list-item">Бесплатная горячая линия
+                                        Ежедневно с 9 до 21</li>
+                                    <li class="footer-lists__list-item footer-lists__list-item--contacts">
+                                        <a href="#">Контактный Email</a>
+                                    </li>
+                                    <li class="footer-lists__list-item">info@brd.ru</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-middle__column footer-middle__column--two footer-lists">
+                        <div class="footer-lists__item footer-lists__item--open">
+                            <div class="footer-lists__item-title footer__title">
+                                Помощь
+                            </div>
+                            <ul class="footer-lists__list">
+                                <li class="footer-lists__list-item"> <a class="footer-lists__list-link"
+                                        href="#">Доставка</a>
+                                </li>
+                                <li class="footer-lists__list-item"> <a class="footer-lists__list-link"
+                                        href="#">Оплата</a>
+                                </li>
+                                <li class="footer-lists__list-item"> <a class="footer-lists__list-link"
+                                        href="#">Возврат</a>
+                                </li>
+                                <li class="footer-lists__list-item"> <a class="footer-lists__list-link" href="#">Отзывы
+                                        (2290)</a>
+                                </li>
+                                <li class="footer-lists__list-item"> <a class="footer-lists__list-link" href="#">Акции и
+                                        скидки</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-lists__item">
+                            <div class="footer-lists__item-title footer__title ">
+                                Компания
+                            </div>
+                            <ul class="footer-lists__list">
+                                <li class="footer-lists__list-item"> <a class="footer-lists__list-link"
+                                        href="#">Контакты</a>
+                                </li>
+                                <li class="footer-lists__list-item"> <a class="footer-lists__list-link" href="#">О
+                                        boardriders</a>
+                                </li>
+                                <li class="footer-lists__list-item"> <a class="footer-lists__list-link"
+                                        href="#">Вакансии</a>
+                                </li>
+                                <li class="footer-lists__list-item"> <a class="footer-lists__list-link"
+                                        href="#">Публичная
+                                        оферта</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-lists__item">
+                            <div class="footer-lists__item-title footer__title footer-lists__item--open">
+                                Boardriders Inc.
+                            </div>
+                            <ul class="footer-lists__list">
+                                <li class="footer-lists__list-item"> <a class="footer-lists__list-link"
+                                        href="#">Франчайзинг</a>
+                                </li>
+                                <li class="footer-lists__list-item"> <a class="footer-lists__list-link"
+                                        href="#">Quiksilver</a>
+                                </li>
+                                <li class="footer-lists__list-item"> <a class="footer-lists__list-link"
+                                        href="#">Roxy</a>
+                                </li>
+                                <li class="footer-lists__list-item"> <a class="footer-lists__list-link" href="#">DC
+                                        Shoes</a>
+                                </li>
+                                <li class="footer-lists__list-item"> <a class="footer-lists__list-link"
+                                        href="#">Boardriders
+                                        Club</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom__socials">
+                        <a href="#">
+                            <img src="images/footer/twitter.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/footer/facebook.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/footer/twitch.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/footer/youtube.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/footer/instagram.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-bottom__copy">
+                        © 2021 Brd.ru Все права защищены
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="open-place" class="open-place mfp-hide">
+        <div class="open-place__wrapper">
+            <div class="open-place__title">
+                Выбор города
+            </div>
+            <p class="open-place__info">
+                От выбранного региона зависят доступные способы доставки, их стоимость и наличие товаров
+            </p>
+            <ul class="open-place__list">
+                <li>Россия</li>
+                <li>Москва</li>
+            </ul>
+            <div class="open-place__select">
+                <div class="open-place__select-button">
+                    Россия
+                </div>
+                <div class="open-place__sublist">
+                    <div class="open-place__sublist-search">
+                        <input type="search">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.91429 0C11.2785 0 13.5459 0.939181 15.2176 2.61093C16.8894 4.28269 17.8286 6.55007 17.8286 8.91429C17.8286 11.1223 17.0194 13.152 15.6891 14.7154L16.0594 15.0857H17.1429L24 21.9429L21.9429 24L15.0857 17.1429V16.0594L14.7154 15.6891C13.0979 17.0699 11.041 17.8284 8.91429 17.8286C6.55007 17.8286 4.28269 16.8894 2.61093 15.2176C0.939181 13.5459 0 11.2785 0 8.91429C0 6.55007 0.939181 4.28269 2.61093 2.61093C4.28269 0.939181 6.55007 0 8.91429 0ZM8.91429 2.74286C5.48571 2.74286 2.74286 5.48571 2.74286 8.91429C2.74286 12.3429 5.48571 15.0857 8.91429 15.0857C12.3429 15.0857 15.0857 12.3429 15.0857 8.91429C15.0857 5.48571 12.3429 2.74286 8.91429 2.74286Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+
+                    <ul class="open-place__sublist-list">
+                        <li class="active">
+                            <a role="option">Россия</a>
+                        </li>
+                        <li>
+                            <a role="option">Белоруссия</a>
+
+                        </li>
+                        <li>
+                            <a role="option">Казахстан</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="open-place__select open-place__select--bottom">
+                <div class="open-place__select-name">
+                    Ваш город:
+                </div>
+                <div class="open-place__select">
+                    <div class="open-place__select-button">
+                        Москва
+                    </div>
+                    <div class="open-place__sublist">
+                        <div class="open-place__sublist-search">
+                            <input type="search">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.91429 0C11.2785 0 13.5459 0.939181 15.2176 2.61093C16.8894 4.28269 17.8286 6.55007 17.8286 8.91429C17.8286 11.1223 17.0194 13.152 15.6891 14.7154L16.0594 15.0857H17.1429L24 21.9429L21.9429 24L15.0857 17.1429V16.0594L14.7154 15.6891C13.0979 17.0699 11.041 17.8284 8.91429 17.8286C6.55007 17.8286 4.28269 16.8894 2.61093 15.2176C0.939181 13.5459 0 11.2785 0 8.91429C0 6.55007 0.939181 4.28269 2.61093 2.61093C4.28269 0.939181 6.55007 0 8.91429 0ZM8.91429 2.74286C5.48571 2.74286 2.74286 5.48571 2.74286 8.91429C2.74286 12.3429 5.48571 15.0857 8.91429 15.0857C12.3429 15.0857 15.0857 12.3429 15.0857 8.91429C15.0857 5.48571 12.3429 2.74286 8.91429 2.74286Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <ul class="open-place__sublist-list">
+                            <li>Россия</li>
+                            <li>Белоруссия</li>
+                            <li>Казахстан</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="registr" class="registration mfp-hide">
+        <div class="registration__wrapper">
+            <div class="registration__column">
+                <div class="registration__column-title registration__column-title--login">
+                    Вход
+                </div>
+                <div class="registration__column-content registration__column-content--login">
+                    <label class="registration__column-name" for="">Номер телефона или email
+                        <input type="text">
+
+                    </label>
+                    <button class="registration__column-button registration__column-button--right" type="submit">
+                        Получить код
+                    </button>
+                </div>
+
+
+            </div>
+            <div class="registration__column registration__column--right">
+                <div class="registration__column-title registration__column-title--registr">
+                    Регистрация
+                </div>
+                <div class="registration__column-content registration__column-content--registr">
+
+                    <label class="registration__column-name" for=""> Имя
+                        <input type="text">
+
+                    </label>
+
+
+                    <label class="registration__column-email" for="">Email
+                        <input type="text">
+
+                    </label>
+
+
+
+
+                    <label class="registration__column-number" for="">Номер телефона
+                        <input type="text">
+
+                    </label>
+
+
+                    <label class="registration__column-check" for="">
+                        <span> Вы соглашаетесь с правилами</span>
+                        <input type="checkbox">
+                    </label>
+
+
+                    <button class="registration__column-button" type="submit">
+                        Зарегистрироваться
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="gallery" class="white-popup mfp-hide">
+        <div class="gallery__item">
+            <img src="images/product-item/product/one-full.webp" alt="">
+        </div>
+        <div class="gallery__item">
+            <img src="images/product-item/product/one-full.webp" alt="">
+        </div>
+        <div class="gallery__item">
+            <img src="images/product-item/product/one-small.webp" alt="">
+        </div>
+        <div class="gallery__item">
+            <img src="images/product-item/product/one-small.webp" alt="">
+        </div>
+    </div>
+
+
+
+    <script src='js/main.min.js'></script>
+</body>
+
+</html>

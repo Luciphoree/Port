@@ -1,0 +1,114 @@
+@font-face {
+	font-family: 'Segoe UI Light' , sans-serif;
+	src: url('../fonts/SegoeUI/');
+	src: local('../fonts/SegoeUI/SegoeUI-Light'), local('SegoeUI-Light'),
+		url('../fonts/SegoeUI/SegoeUI-Light') format('woff');
+	font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+	font-family: 'Segoe UI Regular' , sans-serif;
+	src: url('../fonts/SegoeUI/SegoeUI.woff');
+	src: local('../fonts/SegoeUI/SegoeUI'), local('SegoeUI'),
+		url('../fonts/SegoeUI/SegoeUI.woff') format('woff');
+	font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+	font-family: 'Segoe UI SemiBold' , sans-serif;
+	src: url('../fonts/SegoeUI/SegoeUI-SemiBold.woff');
+	src: local('../fonts/SegoeUI/SegoeUI-SemiBold'), local('SegoeUI'),
+		url('../fonts/SegoeUI/SegoeUI-SemiBold.woff') format('woff');
+	font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'Segoe UI Bold' , sans-serif;
+	src: url('../fonts/SegoeUI/SegoeUI-Bold.woff');
+	src: local('../fonts/SegoeUI/SegoeUI-Bold'), local('SegoeUI-Bold'),
+		url('../fonts/SegoeUI/SegoeUI-Bold.woff') format('woff');
+	font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'aviorte_personal_use_onlyRg';
+    src: url('../fonts/Aviorte/aviorte.woff2') format('woff2'),
+         url('../fonts/Aviorte/aviorte.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'gilroy-ultralight';
+    src: url('Gilroy-UltraLight.eot');
+    src: local('../fonts/Gilroy/Gilroy-UltraLight'), local('Gilroy-UltraLight'),
+        url('../fonts/Gilroy/Gilroy-UltraLight.woff2') format('woff2'),
+        url('../fonts/Gilroy/Gilroy-UltraLight.woff2') format('woff2'),
+        url('../fonts/Gilroy/Gilroy-UltraLight.woff') format('woff'),
+        url('../fonts/Gilroy/Gilroy-UltraLight.woff') format('woff');
+        font-display: swap;
+        font-weight: 200;
+}
+
+@font-face {
+    font-family: 'gilroy-light';
+    src: url('Gilroy-light.eot');
+    src: local('../fonts/Gilroy/Gilroy-Light'), local('Gilroy-Light'),
+        url('../fonts/Gilroy/Gilroy-Light.woff2') format('woff2'),
+        url('../fonts/Gilroy/Gilroy-Light.woff2') format('woff2'),
+        url('../fonts/Gilroy/Gilroy-Light.woff') format('woff'),
+        url('../fonts/Gilroy/Gilroy-Light.woff') format('woff');
+        font-display: swap;
+        font-weight: 300;
+}
+@font-face {
+    font-family: 'gilroy-regular';
+    src: url('Gilroy-Regular.eot');
+    src: local('../fonts/Gilroy/Gilroy-Regular'), local('Gilroy-Regular'),
+        url('../fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+        url('../fonts/Gilroy/Gilroy-Regular.woff') format('woff');
+        font-display: swap;
+        font-weight: 400;
+}
+@font-face {
+    font-family: 'gilroy-medium';
+    src: url('Gilroy-Medium.eot');
+    src: local('../fonts/Gilroy/Gilroy-Mediumr'), local('Gilroy-Medium'),
+        url('../fonts/Gilroy/Gilroy-Medium.woff2') format('woff2'),
+        url('../fonts/Gilroy/Gilroy-Medium.woff2') format('woff2'),
+        url('../fonts/Gilroy/Gilroy-Medium.woff') format('woff'),
+        url('../fonts/Gilroy/Gilroy-Medium.woff') format('woff');
+        font-display: swap;
+        font-weight: 500;
+}
+@font-face {
+    font-family: 'gilroy-semibold';
+    src: url('Gilroy-Semibold.eot');
+    src: local('../fonts/Gilroy/Gilroy-Semibold'), local('Gilroy-Semibold'),
+        url('../fonts/Gilroy/Gilroy-Semibold.woff2') format('woff2'),
+        url('../fonts/Gilroy/Gilroy-Semibold.woff2') format('woff2'),
+        url('../fonts/Gilroy/Gilroy-Semibold.woff') format('woff'),
+        url('../fonts/Gilroy/Gilroy-Semibold.woff') format('woff');
+        font-display: swap;
+        font-weight: 600;
+}
+@font-face {
+    font-family: 'gilroy-bold';
+    src: url('Gilroy-Bold.eot');
+    src: local('../fonts/Gilroy/Gilroy-Bold'), local('Gilroy-Bold'),
+        url('../fonts/Gilroy/Gilroy-Bold.woff2') format('woff2'),
+        url('../fonts/Gilroy/Gilroy-Bold.woff2') format('woff2'),
+        url('../fonts/Gilroy/Gilroy-Bold.woff') format('woff'),
+        url('../fonts/Gilroy/Gilroy-Bold.woff') format('woff');
+        font-display: swap;
+        font-weight: 700;
+}
+
+@font-face {
+    font-family: 'alinea_typefaceregular';
+    src: url('../fonts/Alineatypeface/alineatypeface-eldx-webfont.woff2') format('woff2'),
+         url('../fonts/Alineatypeface/alineatypeface-eldx-webfont.woff') format('woff');
+    font-display: swap;
+	font-weight: 400;
+}

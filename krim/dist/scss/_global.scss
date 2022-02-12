@@ -1,0 +1,45 @@
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    // background: #FCFCFC;
+    background: #fff;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Gilroy", "sans-serif";
+    color: #2e2e2e;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    display: inline-block;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.logo {
+    display: flex;
+    span {
+        align-self: center;
+        font-size: 35px;
+        font-weight: 700;
+        margin-left: 22px;
+    }
+}
+.header {
+    flex: 0 0 auto;
+}
+.content-wrapper {
+    flex: 1 1 auto;
+}
+.footer {
+    flex: 0 0 auto;
+}

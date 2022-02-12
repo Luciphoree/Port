@@ -1,0 +1,1729 @@
+@media ( max-width: 1844px){
+    .programms{
+        &__item{
+            max-width: 650px;
+        }
+    }
+}
+
+@media ( max-width: 1805px){
+    // .slick-center img {
+    //     padding-top: 100px;
+    //   }
+      .slick-center{
+        p{
+            top:170px;
+        }
+    } 
+}  
+@media ( max-width: 1713px){
+    .header{
+        &__logo{
+            font-size: 50px;
+            &-info{
+                font-size: 33px;
+            }
+        }
+    }
+    .footer{
+        &__logo{
+            font-size: 24px;
+            &-word{
+                font-size: 60px;
+            }
+        }
+    }
+}
+@media ( max-width: 1651px){
+    .header{
+        &__logo{
+            &-word{
+                font-size: 100px;
+            }
+        }
+    }
+    .header__bottom{
+        &-content{
+            font-size: 20px;
+            span{
+                font-size: 120px;
+            }
+        }
+        &-title{
+            font-family: 'gilroy-bold';
+            font-size: 18px;    
+        }
+    }
+    .teacher{
+        &__text{
+            p{
+                font-size: 25px;
+            }
+        }
+        &__info{
+            p{
+                font-size: 23px;
+            }  
+        }
+        &__content{
+            p + p {
+                padding-top: 25px;
+            }
+        }
+        &__images{
+            &-name{
+                font-size: 25px;
+            }
+        }
+    }
+    .programms{
+        &__item{
+            max-width: 600px;
+        }
+        &__link{
+            padding: 20px 40px;
+        }
+    }
+    .image-block{
+        &__content{
+            top: 150px;
+            &-name{
+                h1{
+                    font-size: 55px;
+                }
+                p{
+                    font-size: 25px;
+                }
+            }
+            &-info{
+                font-size: 25px;
+            }
+        }
+    }
+    .buttons-title{
+        font-size: 37px;
+    }
+    .buttons-subtitle{
+        font-size: 26px;
+    }
+    .btn{
+        padding: 25px 50px;
+    }
+    .footer{
+        &__logo{
+            &-word{
+                font-size: 60px;
+            }
+        }
+    }
+}
+
+@media ( max-width: 1562px){
+    .header{
+        &__list{
+            &-item{
+                &--two{
+                    margin-left: 35px;
+                }
+                &--three{
+                    margin-left: 45px;
+                }
+                &--four{
+                    margin-left: 55px;
+                }
+                &--five{
+                    margin-left: 65px;
+                }
+            }
+        }
+    }
+    .teacher{
+        &__text{
+            p{
+                font-size: 22px;
+            }
+        }
+        &__info{
+            p{
+                font-size: 20px;
+            }  
+        }
+        &__content{
+            p + p {
+                padding-top: 25px;
+            }
+        }
+    }  
+    .programms{
+        &__item{
+            max-width: 550px;
+        }
+        &__price{
+            &-old{
+                font-size: 28px;
+                background-position: -35px 15px;
+            }
+            &-new{
+                font-size: 38px;
+            }
+        }
+    }
+    .slick-center{
+        p{
+            top:160px;
+        }
+    } 
+    .footer{
+        &__col{
+            &--left{
+                max-width: 400px;
+            }
+        }
+    }
+    input[placeholder="Ваше имя:"],input[placeholder="Номер телефона"]{
+        width: 190px;
+    }
+}
+
+@media ( max-width: 1500px){
+    .teacher{
+        &__text{
+            p{
+                font-size: 20px;
+            }
+        }
+        &__info{
+            p{
+                font-size: 18px;
+            }  
+        }
+        &__content{
+            p + p {
+                padding-top: 25px;
+            }
+        }
+    }   
+}
+@media ( max-width: 1440px){
+    .header__bottom{
+        &-content{
+            font-size: 18px;
+            span{
+                font-size: 125px;
+            }
+        }
+        &-row{
+            grid-column-gap: 125px;
+            grid-template-columns: 40% 50%;
+        }
+        &-title{
+            font-family: 'gilroy-bold';
+            font-size: 18px;    
+        }
+    }
+    .teacher{
+        &__text{
+            p{
+                font-size: 18px;
+            }
+        }
+        &__info{
+            p{
+                font-size: 16px;
+                &::before{
+                    background-size: 70%;
+                    background-repeat: no-repeat;
+                    right: -65px;
+                    bottom: -45px;
+                }
+                &::after{
+                    background-size: 70%;
+                    background-repeat: no-repeat;
+                }
+            }  
+        }
+        &__content{
+            p + p {
+                padding-top: 25px;
+            }
+        }
+        &__images{
+            &-name{
+                font-size: 18px;
+            }
+        }
+    } 
+    .programms{
+        &__item{
+            max-width: 490px;
+        }
+        &__price{
+            &-old{
+                font-size: 28px;
+            }
+            &-new{
+                font-size: 38px;
+            }
+        }
+        &__link{
+            padding: 20px 35px;
+            font-size: 25px;
+        }
+        &__name{
+            h3{
+                font-size: 45px;
+                span{
+                    font-size: 25px;
+                }
+            }
+            &-title{
+                // display: block;
+                h3{
+                    font-size: 45px;
+                    span{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        .kurs{
+            font-size: 25px;
+        }
+    }
+    .buttons-title{
+        font-size: 37px;
+    }
+    .buttons-subtitle{
+        font-size: 26px;
+    }
+    .btn{
+        padding: 25px 50px;
+    }
+    .image-block{
+        &__content{
+            top: 150px;
+            &-name{
+                h1{
+                    font-size: 45px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+            &-info{
+                font-size: 19px;
+            }
+        }
+    }
+}
+@media (max-width: 1350px){
+    .footer{
+        &__col{
+            &-name{
+                font-size: 23px;
+                line-height: 30px;
+            }
+            &-icons{
+                width: 230px;
+            }
+            &-tel{
+                font-size: 20px;
+            }
+            &--left{
+                width: 260px;
+            }
+            &--nav{
+                width: 230px;
+            }
+            &--contacts{
+               width: 230px;
+            }
+        }
+        &__list{
+            a{
+                font-size: 18px;
+            }
+        }
+        &__forms{
+            &-group-top{
+                display: block;
+            }
+        }
+  
+    }
+    input[placeholder="Ваше имя:"],input[placeholder="Номер телефона"]{
+        display: block;
+        width: 70%;
+    }
+    input[placeholder="Ваше имя:"]{
+        margin-bottom: 10px;
+    }
+    input[placeholder="Ваш вопрос?"]{
+        width: 100%;
+    }
+}
+@media ( max-width: 1325px){
+    .header{
+        &__logo{
+            font-size: 35px;
+            &-word{
+                font-size: 75px;
+                top: -99%;
+                span{
+                    left: -35px;
+                    top: -20px;
+                }
+            }
+            &-info{
+                font-size: 23px;
+            }
+        }
+        &__list{
+            &-item{
+                &--two{
+                    margin-left: 35px;
+                }
+                &--three{
+                    margin-left: 45px;
+                }
+                &--four{
+                    margin-left: 55px;
+                }
+                &--five{
+                    margin-left: 65px;
+                }
+            }
+        }
+        &__bottom{
+            &-content{
+                font-size: 18px;
+                span{
+                    font-size: 100px;
+                }
+            }
+            &-name{
+                font-size: 50px;
+            }
+            &-row{
+                grid-column-gap: 100px;
+                grid-template-columns: 40% 52%;
+            }
+            &-title{
+                font-family: 'gilroy-bold';
+                font-size: 18px; 
+            }
+
+        }
+    }
+    .teacher{
+        &__text{
+            p{
+                font-size: 16px;
+            }
+        }
+        &__info{
+            p{
+                font-size: 14px;
+            }  
+        }
+        &__content{
+            p + p {
+                padding-top: 25px;
+            }
+        }
+        &__one, &__two{
+            padding: 40px 40px;
+        }
+        &__name{
+            font-size: 40px;
+        }
+    }
+    .programms{
+        &__title{
+            font-size: 40px;
+        }
+    }
+    .buttons-title{
+        font-size: 32px;
+    }
+    .buttons-subtitle{
+        font-size: 22px;
+        line-height: 1.5;
+    }
+    .btn{
+        padding: 25px 50px;
+    }
+      .slick-center{
+
+        p{
+            top:160px;
+        }
+    } 
+    .footer{
+        &__logo{
+            font-size: 24px;
+            &-word{
+                font-size: 60px;
+                left: -110%;
+                top: -15%;
+                span{
+                    left: 35%;
+                    top:-30%;
+                }
+            }
+        }
+    }
+    .block-popup{
+        max-width: 1050px;
+        &__images{
+            max-width: 50%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+@media ( max-width: 1283px){
+    .teacher{
+        &__text{
+            p{
+                font-size: 14px;
+            }
+        }
+        &__info{
+            p{
+                font-size: 12px;
+            }  
+        }
+        &__content{
+            p + p {
+                padding-top: 25px;
+            }
+        }
+        &__info{
+            p{
+                &::before{
+                    background-size: 40%;
+                    background-repeat: no-repeat;
+                    right: -65px;
+                    bottom: -45px;
+                }
+                &::after{
+                    background-size: 40%;
+                    background-repeat: no-repeat;
+                    top: -30px;
+                }
+            }  
+        }
+    }
+    .header{
+        &__logo{
+            font-size: 35px;
+        }
+        &__list{
+            &-item{
+                font-size: 15px;
+                &--two{
+                    margin-left: 25px;
+                }
+                &--three{
+                    margin-left: 35px;
+                }
+                &--four{
+                    margin-left: 45px;
+                }
+                &--five{
+                    margin-left: 55px;
+                }
+            }
+        }
+    }
+    .image-block{
+        &__content{
+            top: 120px;
+            right: 120px;
+            &-name{
+                h1{
+                    font-size: 35px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+            &-info{
+                font-size: 16px;
+            }
+        }
+    } 
+    .programms{
+        &__inner{
+            &-row{
+                display: block; 
+            }
+            &-row + &-row{
+                padding-top: 0;
+            }
+        }
+        &__item{
+            margin: 50px auto;
+            width: 100%;
+            max-width: 900px;
+            border: 1px solid #000;
+            border-radius: 50px;
+            padding: 70px 50px;
+            padding-right: 50px;
+            row-gap: 35px;
+            grid-template-rows: 0.4fr 0.3fr 1fr 0.6fr;
+            &--two{
+                background-position: 350px -50px;
+                background-size: 73%;
+            }
+            &--three{
+                background-position: 270px 50px;
+                
+            }
+            &--four{
+                background-position: 470px 20px;
+                background-size: 50%;
+            }
+        }
+        &__programm{
+            &-list{
+                li{
+                    font-size: 20px;
+                }
+            }
+        }
+        &__name{
+            h3{
+                span{
+                    margin-top: 35px;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .footer{
+        &__logo{
+            font-size: 24px;
+            &-word{
+                font-size: 60px;
+                left: -110%;
+                top: -15%;
+                span{
+                    left: 35%;
+                    top:-30%;
+                }
+            }
+        }
+    }
+}
+@media ( max-width: 1167px){
+    .header{
+        &__logo{
+            font-size: 30px;
+            &-info{
+                font-size: 19.7px;
+            }
+        }
+        &__list{
+            &-item{
+                font-size: 13px;
+                &--two{
+                    margin-left: 20px;
+                }
+                &--three{
+                    margin-left: 30px;
+                }
+                &--four{
+                    margin-left: 40px;
+                }
+                &--five{
+                    margin-left: 50px;
+                }
+            }
+        }
+        &__bottom{
+            &-content{
+                font-size: 16px;
+                span{
+                    font-size: 90px;
+                }
+            }
+            &-row{
+                grid-column-gap: 75px;
+                grid-template-columns: 42% 50%;
+            }
+            &-title{
+                font-family: 'gilroy-bold';
+                font-size: 15px;  
+            }
+        }
+    }
+    .buttons-title{
+        font-size: 23px;
+        line-height: 1.7;
+    }
+    .buttons-subtitle{
+        font-size: 18px;
+    }
+    .btn{
+        padding: 25px 35px;
+    }
+    .footer{
+        &__logo{
+            font-size: 24px;
+            &-word{
+                font-size: 60px;
+                left: -110%;
+                top: -15%;
+                span{
+                    left: 35%;
+                    top:-30%;
+                }
+            }
+        }
+    }
+}
+@media ( max-width: 1110px){
+    .teacher{
+        &__text{
+            p{
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+        &__info{
+            p{
+                font-size: 18px;
+                text-align: center;
+                padding-top: 80px;
+            }  
+        }
+        &__content{
+            p + p {
+                padding-top: 25px;
+            }
+        }
+        &__images{
+            text-align: center;
+            padding-bottom: 25px;
+            &-name{
+                text-align: center;
+                left: 0;
+                right: 0;
+                font-size: 20px;
+            }
+        }
+        &__one{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__two{
+            .teacher__images{
+                order: 0;
+                text-align: center;
+            }
+            .teacher__content{
+                order: 1;
+            }
+        }
+        &__info{
+            p{
+                font-size: 19px;
+                &::before{
+                    background-size: 40%;
+                    background-repeat: no-repeat;
+                    right: -35px;
+                    bottom: -45px;
+                }
+                &::after{
+                    background-size: 40%;
+                    background-repeat: no-repeat;
+                    top: 45px;
+                }
+            }  
+        }
+    }
+    .image-block{
+        &__content{
+            top: 80px;
+            right: 80px;
+        }
+    }
+    .header__bottom{
+        &-content{
+            font-size: 16px;
+            span{
+                font-size: 90px;
+            }
+        }
+        &-row{
+            grid-column-gap: 50px;
+            grid-template-columns: 42% 52%;
+        }
+        &-title{
+            font-family: 'gilroy-bold';
+            font-size: 15px;    
+        }
+    }
+    .buttons-title{
+        font-size: 23px;
+        line-height: 1.7;
+    }
+    .buttons-subtitle{
+        font-size: 16px;
+    }
+    .btn{
+        padding: 25px 35px;
+    }
+    .block-popup{
+        max-width: 650px;
+        &__images{
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .popup-form{
+        padding-top: 0;
+    }
+    #popup input[placeholder="Ваше имя:"]{
+        width: 250px;
+        padding:10px;
+        margin-bottom: 29px;
+        font-size: 20px;
+        line-height: 20px;
+        font-family: 'gilroy-medium';
+        color: #343434;
+    }
+    #popup input[placeholder="Номер телефона"]{
+        width: 250px;
+        padding:10px;
+        margin-bottom: 29px;
+        font-size: 20px;
+        line-height: 20px;
+        font-family: 'gilroy-medium';
+        color: #343434;
+    }
+    #popup textarea[placeholder="Ваш вопрос?(не обязательно)"]{
+        width: 303px;
+        height: 160px;
+        background: #E2E2E2;
+        border-radius: 24px;
+        font-size: 20px;
+        line-height: 20px;
+        border: none;
+        outline: none;
+        resize: none;
+        font-family: 'gilroy-medium';
+        padding: 10px;
+        margin-bottom: 16px;
+    }
+}
+@media ( max-width: 1050px){
+    .container{
+        padding: 0 25px;
+    }
+    .header__bottom{
+        &-row{
+            width: 100%;
+            display: block;
+        }
+        &-column{
+            display: block;
+        }
+        &-buttons-inner{
+            text-align: center;
+            height: 150px;
+        }
+        &-content{
+            padding: 0 10px;
+            span{
+              position: static;
+              display: block;
+              text-align: center;
+              font-size: 85px;
+              margin-bottom: -10px;
+              margin-top: 25px;
+            }
+            p{
+              text-align: center;
+              br{
+                  display: none;
+              }
+            }
+        }
+        &-buttons-inner{
+            margin-top: 45px;
+        }
+        &-name{
+            font-size: 45px;
+        }
+        &-title{
+            text-align: center;
+            font-size: 20px;
+            padding-bottom: 30px;
+        }
+        &-text{
+            font-size: 18px;
+        }
+    }
+    .buttons-title{
+        font-size: 35px;
+        line-height: 1.7;
+        
+    }
+    .buttons-subtitle{
+        font-size: 25px;
+    }
+    .btn{
+        font-size: 20px;
+        padding: 25px 120px;
+    }
+}
+@media ( max-width: 890px){
+    .container{
+        padding: 0 25px;
+    }
+    .programms{
+        &__inner{
+            &-row{
+                display: block; 
+            }
+            &-row + &-row{
+                padding-top: 0;
+            }
+        }
+        &__item{
+            margin: 50px auto;
+            width: 100%;
+            max-width: 900px;
+            border: 1px solid #000;
+            border-radius: 50px;
+            padding: 70px 50px;
+            padding-right: 50px;
+        }
+        &__programm{
+            &-list{
+                li{
+                    font-size: 20px;
+                }
+            }
+        }
+        &__name{
+            h3{
+                span{
+                    margin-top: 35px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 850px){
+    .footer{
+        padding: 25px 0;
+        &__inner{
+            flex-wrap: wrap;
+            padding: 0 10px;
+        }
+        &__logo{
+            padding-bottom: 43px;
+            display: none;
+        }
+        &__col{
+            width: 100%;
+            &--left{
+                padding-bottom: 25px;
+            }
+            &--nav{
+                padding-bottom: 25px;
+            }
+        }
+        &__list{
+            width: 300px;
+        }
+    }
+}
+@media ( max-width: 800px){
+    .teacher{
+        &__text{
+            p{
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+        &__info{
+            p{
+                font-size: 18px;
+                text-align: center;
+                padding-top: 80px;
+            }  
+        }
+        &__content{
+            p + p {
+                padding-top: 25px;
+            }
+        }
+        &__images{
+            text-align: center;
+            padding-bottom: 25px;
+        }
+        &__one{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__two{
+            .teacher__images{
+                order: 0;
+                text-align: center;
+            }
+            .teacher__content{
+                order: 1;
+            }
+        }
+        &__name{
+            font-size: 35px;
+        }
+    }
+    .gallery{
+        &__name{
+            font-size: 35px;
+        }
+    }
+    .programms{
+        &__title{
+            font-size: 35px;
+        }
+    }
+    .container{
+        padding: 0;
+    }
+    .programms{
+        .container{
+            padding: 0 5px;
+        }
+    }
+    .header__top{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 10000;
+        background-color: #fff;
+    }
+    .header__list{
+        display: none;
+        position: absolute;
+        top: 130px;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        z-index: 15;
+        background-image: url(../images/bgbutton.png);
+        background-size: cover;
+        background-position: center center;
+        li{
+            display: block;
+        }
+        li + li{
+            padding-top: 20px;
+        }
+        a{
+            color: #fff;
+            font-size: 30px;
+            display: block;
+            padding: 15px 0;
+        }
+        .header__list-item--two{
+            margin-left: 0;
+        }
+        .header__list-item--three{
+            margin-left: 0;
+        }
+        .header__list-item--four{
+            margin-left: 0;
+        }
+        .header__list-item--five{
+            margin-left: 0;
+        }
+    }
+    .image-block__content{
+        position: absolute;
+        top: 500px;
+        right:350px;
+        &-name{
+            display: block;
+            h1{
+                animation: none;
+                font-family: 'gilroy-medium';
+                font-weight: 500;
+                font-size: 45px;
+            }
+            p{
+                font-family: 'gilroy-medium';
+            }
+        }
+        &-info{
+            p{
+                position: absolute;
+                top: 100px;
+                text-align:left;
+                font-family: 'gilroy-medium';
+                max-width: 200px;
+            }
+        }
+    }
+    .header__inner{
+        padding-top: 60px;
+        padding-bottom: 40px;
+        display: flex;
+        align-items: center;
+    }
+    .header__top{
+        border-bottom: none;
+    }
+    .header__logo{
+        padding-left: 20px;
+        position: relative;
+        &::before,&::after{
+            content:"";
+            position: absolute;
+        }
+        &::before{
+            background-image: url(../images/V.png);
+            width: 48px;
+            height: 64px;
+            left: 80px;
+            top:-54px;
+        }
+        &::after{
+            background-image: url(../images/D.png);
+            width: 39px;
+            height: 60px;
+            left: 106px;
+            top: -40px;
+        }
+    }
+    .header__logo-word{
+        display: none;
+    }
+    .header__logo-info{
+        display: block;
+        font-size: 19.7px;
+        opacity: 0.75;
+    }
+    .nav__btn{
+        margin-right: 15px;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        &::after,&::before{
+            content: "";
+            width: 100%;
+            height: 2px;
+            border-radius: 2px;
+            background-color: #000;
+            position: absolute;
+        }
+        &::after{
+            top: 0;
+        }
+        &::before{
+            top: 9px;
+        }
+        span{
+            width: 50%;
+            height: 2px;
+            border-radius: 2px;
+            background-color: #000;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        
+    }
+    .image-block{
+        min-height: 800px;
+        width: 100%;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+        img{
+            position: absolute;
+            width: 65%;
+            height: 65%;
+            top: 5%;
+            left: 35%;
+        }
+    }
+    .image{
+        width: 100%;
+    }
+    .slick-center{
+        p{
+            font-size: 20px;
+        }
+    }
+
+}
+@media ( max-width: 720px){
+    .image-block__content-name{
+        h1{
+            font-size: 40px;
+        }
+    }
+    .programms{
+        &__item{
+            &--four{
+                background-position: 400px 50px;
+            }
+        }
+        &__info{
+            font-size: 27px;
+        }
+    }
+}
+
+@media ( max-width: 700px){
+    .image-block__content{
+        position: absolute;
+        top: 500px;
+        right:220px;
+    }
+    .block-popup{
+        max-width: 480px;
+    }
+    .popup-form{
+        &__button{
+            padding:8px 25px;
+        }
+    }
+    #popup input[placeholder="Ваше имя:"]{
+        width: 180px;
+        padding:10px;
+        margin-bottom: 29px;
+        font-size: 20px;
+        line-height: 20px;
+        font-family: 'gilroy-medium';
+        color: #343434;
+    }
+    #popup input[placeholder="Номер телефона"]{
+        width: 180px;
+        padding:10px;
+        margin-bottom: 29px;
+        font-size: 20px;
+        line-height: 20px;
+        font-family: 'gilroy-medium';
+        color: #343434;
+    }
+    #popup textarea[placeholder="Ваш вопрос?(не обязательно)"]{
+        width: 220px;
+        height: 90px;
+        background: #E2E2E2;
+        border-radius: 24px;
+        font-size: 20px;
+        line-height: 20px;
+        border: none;
+        outline: none;
+        resize: none;
+        font-family: 'gilroy-medium';
+        padding: 10px;
+        margin-bottom: 16px;
+    }
+}
+@media ( max-width: 650px){
+    .slick-center{
+        margin-top: -130px;
+        p{
+            font-size: 17px;
+        }
+    }
+    .slick-arrow.slick-prev{
+        background-size: 50%;
+        left: 30%;
+        top: 60%;
+    }
+    .slick-arrow.slick-next{
+        background-size: 50%;
+        right: 29%;
+        top: 60%;
+    }
+    .buttons-title{
+        font-size: 25px;
+    }
+    .buttons-subtitle{
+        font-size: 17px;
+    }
+    .btn{
+        padding: 25px 65px;
+    }
+    .header__bottom{
+        &-name{
+            font-size: 35px;
+            text-align: center;
+        }
+    }
+    .programms{
+        &__title{
+            text-align: center;
+        }
+    }
+    .gallery{
+        &__name{
+            text-align: center;
+        }
+    }
+    .teacher{
+        &__name{
+            text-align: center;
+        }
+    }
+}
+@media ( max-width: 649px){
+    .slick-arrow.slick-prev{
+        background-size: 70%;
+        left: 10%;
+        top: 59%;
+    }
+    .slick-arrow.slick-next{
+        background-size: 70%;
+        right: 10%;
+        top: 60%;
+    }
+}
+@media ( max-width: 600px){
+    .image-block{
+        &__content{
+            position: absolute;
+            top: 500px;
+            right:180px;
+            &-info{
+                p{
+                    max-width: 180px;
+                }
+            }
+        }
+    }
+    .programms{
+        &__item{
+            &--two{
+                background-size: 65%;
+                background-position: 270px -10px;
+            }
+            &--three{
+                background-size: 65%;
+                background-position: 210px 60px;
+            }
+            &--four{
+                background-repeat: no-repeat;
+                background-size: 65%;
+                background-position: 250px 20px;
+            }
+        }
+    }
+}
+
+@media ( max-width: 510px){
+    .image-block{
+        min-height: 800px;
+        width: 100%;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+        img{
+            position: absolute;
+            width: 70%;
+            height: 45%;
+            top: 15%;
+            left: 30%;
+        }
+        &__content{
+            position: absolute;
+            right: 100px;
+            &-name{
+                display: block;
+                h1{
+                    font-size: 38px;
+                }
+            }
+            &-info{
+                p{
+                    position: absolute;
+                    top: 100px;
+                    text-align:left;
+                    font-family: 'gilroy-medium';
+                    max-width: 200px;
+                }
+            }
+        }
+    }
+    .block-popup__images{
+        display: none;
+    }
+    .block-popup{
+        border-radius: 0;
+    }
+    .popup-form{
+        width: 100%;
+        display: block;
+    }
+    .mfp-container{
+        padding: 0;
+        margin: 0;
+    }
+    #popup input[placeholder="Ваше имя:"]{
+        width: 270px;
+        margin-top: 40px;
+    }
+    #popup input[placeholder="Номер телефона"]{
+        width: 270px;
+    }
+    #popup textarea[placeholder="Ваш вопрос?(не обязательно)"]{
+        display: block;
+        width: 372px;
+        height: 161px;
+    }
+    .popup-form__title-adaptive.popup-form__button{
+        display: flex;
+        max-width: 303px;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: -50px;
+    }
+}
+@media ( max-width: 510px){
+    .teacher__one{
+        border: none;
+    }
+    .header__bottom{
+        &-buttons-inner{
+            display: block;
+
+        }
+        &-buttons{
+            margin-top: 7px;
+        }
+    }
+    .buttons-title{
+        font-size: 26px;
+    }
+    .buttons-subtitle{
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+    .btn{
+        padding: 15px 45px;
+    }
+    .programms{
+        &__bottom{
+            display: block;
+            text-align: center;
+        }
+        &__name{
+            h3{
+                font-size: 35px;
+                span{
+                    margin-left: 0;
+                    font-size: 22px;
+                }
+            }
+            .kurs{
+                line-height: 1.5;
+                font-size: 22px;
+            }
+            .lesson{
+                font-size: 22px;
+                padding-bottom: 60px;
+            }
+        }
+        &__info{
+            padding-bottom: 80px;
+        }
+        &__item{
+            display: block;
+            padding: 30px 30px;
+            &--two{
+                background-size: 70%;
+                background-position: 220px 50px;
+            }
+            &--three{
+                background-position: 190px 40px;
+                background-size: 60%;
+            }
+        }
+        &__programm{
+            text-align: center;
+        }
+        &__programm-name{
+            font-size: 25px;
+        }
+        &__bonus{
+            padding-bottom: 50px;
+            padding-top: 50px;
+            text-align: center;
+            &-name{
+                font-size: 25px;
+            }
+            &-list{
+                li{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+@media ( max-width:450px){
+    .slick-arrow.slick-prev{
+        background-size: 60%;
+        left: 15%;
+        top: 59%;
+    }
+    .slick-arrow.slick-next{
+        background-size: 60%;
+        right: 13.5%;
+        top: 60%;
+    }
+    .programms{
+        &__item{
+            &--four{
+                background-position: 165px 30px;
+            }
+        }
+    }
+}
+@media ( max-width: 420px){
+    .programms{
+        &__link{
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+        &__item{
+            &--two{
+                .programms__info{
+                    padding-bottom: 50px;
+                }
+            }
+            &--four{
+                .programms__info{
+                    padding-bottom: 40px;
+                }
+            }
+        }
+        &__info{
+            font-size: 22px;
+            padding-bottom: 0;
+        }
+        &__programm{
+            padding-bottom: 20px;
+        }
+        &__bonus{
+            padding-top: 0;
+        }
+    }
+    .image-block{
+        &__content{
+            margin: 0 auto;
+            right: 50px;
+            &-name{
+                text-align: center;
+                h1{
+                    font-size: 35px;
+                }
+            }
+            &-info{
+                p{
+                    position: absolute;
+                    top: 100px;
+                    text-align:right;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    font-family: 'gilroy-medium';
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+    .teacher{
+        &__images{
+            img{
+                width: 100%;
+                // border-radius: 10%;
+            }
+        }
+        &__info{
+            p{
+                text-align: right;
+                margin-left: auto;
+                max-width: 230px;
+                opacity: 1;
+                &::before{
+                    background-image: url(../images/teachers/Vector.svg);
+                    width: 25px;
+                    height: 35px;
+                    bottom: -40px;
+                    right: -35px;
+                }
+                &::after{
+                    background-image: url(../images/teachers/Vectordown.svg);
+                    width: 25px;
+                    height: 35px;
+                    top: 60px;
+                    left: 35px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 400px){
+    #popup textarea[placeholder="Ваш вопрос?(не обязательно)"]{
+        display: block;
+        width: 270px;
+        height: 161px;
+    }
+    #popup input[placeholder="Ваше имя:"]{
+        width: 190px;
+        margin-top: 40px;
+    }
+    #popup input[placeholder="Номер телефона"]{
+        width: 190px;
+    }
+}
+@media (max-width:380px){
+    .slick-arrow.slick-prev{
+        background-size: 60%;
+        left: 13%;
+        top: 60%;
+    }
+    .slick-arrow.slick-next{
+        background-size: 60%;
+        right: 12.5%;
+        top: 60%;
+    }
+}
+
+@media ( max-width: 375px) {
+    .image-block{
+        min-height: 800px;
+        width: 100%;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+        img{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            // max-width: 100%;
+            top: 93px;
+        }
+        &__content{
+            position: absolute;
+            right: 25px;
+            &-info{
+                p{
+                    top: 125px;
+                }
+            }
+        }
+    }
+    .programms{
+        &__item{
+            &--two{
+                background-position: 150px 30px;
+            }
+            &--four{
+                background-position: 135px 30px;
+            }
+        }
+        &__name{
+            h3{
+                font-size: 30px;
+                span{
+                    font-size: 18px;
+                }
+            }
+            .kurs{
+                line-height: 1.5;
+                font-size: 18px;
+            }
+            .lesson{
+                font-size: 22px;
+                padding-bottom: 60px;
+            }
+        }
+    }
+    .header{
+        &__list{
+            top: 120px;
+            left: 0;
+            background-image: url(../images/bgbutton.png);
+            background-size: cover;
+            background-position: center center;
+        }
+        &__inner{
+            padding-top: 25px;
+            padding-bottom: 10px;
+            min-height: 120px;
+            display: flex;
+            align-items: center;
+        }
+        &__logo{
+            font-size: 27px;
+            padding-left: 20px;
+            position: relative;
+            &::before,&::after{
+                content:"";
+                position: absolute;
+            }
+            &::before{
+                background-image: url(../images/V.png);
+                background-size: 70%;
+                background-repeat: no-repeat;
+                left: 80px;
+                top:-40px;
+            }
+            &::after{
+                background-image: url(../images/D.png);
+                background-size: 70%;
+                background-repeat: no-repeat;
+                left: 104px;
+                top: -30px;
+            }
+            &-info{
+                font-size: 17.7px;
+            }
+        }
+        &__bottom{
+            &-content{
+                &--one{
+                    background-image: url(../images/schooladaptive/one.png);
+                    background-repeat: no-repeat;
+                }
+                &--four{
+                    background-image: url(../images/schooladaptive/two.png);
+                    background-position: 100% 1%;
+                    background-repeat: no-repeat;
+                    .header__bottom-title{
+                        br{
+                            display: none;
+                        }
+                    }
+                }
+                &--seven{
+                    background-image: url(../images/schooladaptive/three.png);
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+    .teacher{
+        &__images{
+            &-name{
+                font-size: 15px;
+            }
+        }
+    }
+}

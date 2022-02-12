@@ -1,0 +1,2994 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+
+
+                <div class="header__top">
+                    <form class='header__search-wrapper' action="">
+                        <input type="text" placeholder="Сайттан ІЗДЕУ" name="" id="">
+                        <button type="submit"></button>
+                    </form>
+                    <a href="#" class="header__logo">
+                        <picture>
+                            <source srcset="images/header/logo/logo-mobile.png" media="(max-width: 630px)">
+                            <img src="images/header/logo/logo.png" alt="">
+                        </picture>
+
+                    </a>
+                    <div class="socials">
+                        <a href="#" class="socials__link">
+                            <svg class="socials__svg socials__svg--whap" viewBox="0 0 22 22"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0027 0H10.9973C4.93213 0 0 4.9335 0 11C0 13.4062 0.7755 15.6365 2.09413 17.4474L0.72325 21.5339L4.95138 20.1823C6.69075 21.3345 8.76562 22 11.0027 22C17.0679 22 22 17.0651 22 11C22 4.93488 17.0679 0 11.0027 0ZM17.4034 15.5334C17.138 16.2827 16.0847 16.9042 15.2446 17.0857C14.6699 17.2081 13.9191 17.3057 11.3919 16.258C8.15925 14.9188 6.0775 11.6339 5.91525 11.4207C5.75988 11.2076 4.609 9.68138 4.609 8.10287C4.609 6.52437 5.41062 5.75575 5.73375 5.42575C5.99913 5.15488 6.43775 5.03113 6.8585 5.03113C6.99463 5.03113 7.117 5.038 7.227 5.0435C7.55013 5.05725 7.71237 5.0765 7.9255 5.58663C8.19088 6.226 8.83712 7.8045 8.91412 7.96675C8.9925 8.129 9.07088 8.349 8.96088 8.56213C8.85775 8.78213 8.767 8.87975 8.60475 9.06675C8.4425 9.25375 8.2885 9.39675 8.12625 9.5975C7.97775 9.77213 7.81 9.95913 7.997 10.2823C8.184 10.5985 8.83025 11.6531 9.78175 12.5001C11.0096 13.5932 12.0051 13.9425 12.3612 14.091C12.6266 14.201 12.9429 14.1749 13.1368 13.9686C13.3829 13.7033 13.6867 13.2633 13.9961 12.8301C14.2161 12.5194 14.4939 12.4809 14.7854 12.5909C15.0824 12.694 16.654 13.4709 16.9771 13.6317C17.3003 13.794 17.5134 13.871 17.5917 14.0071C17.6687 14.1433 17.6687 14.7826 17.4034 15.5334Z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="socials__link">
+                            <svg class="socials__svg socials__svg--face" viewBox="0 0 22 22"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.6644 3.65292H16.6728V0.154917C16.3263 0.10725 15.1346 0 13.7468 0C10.851 0 8.86737 1.82142 8.86737 5.16908V8.25H5.67188V12.1605H8.86737V22H12.7852V12.1614H15.8515L16.3382 8.25092H12.7843V5.55683C12.7852 4.42658 13.0895 3.65292 14.6644 3.65292Z" />
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="22" height="22" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a class="socials__link" href="#">
+                            <svg class="socials__svg socials__svg--inst" viewBox="0 0 22 22"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11 6.53125C8.51211 6.53125 6.48828 8.55508 6.48828 11.043C6.48828 13.5309 8.51211 15.5547 11 15.5547C13.4879 15.5547 15.5117 13.5309 15.5117 11.043C15.5117 8.55508 13.4879 6.53125 11 6.53125ZM11 6.53125C8.51211 6.53125 6.48828 8.55508 6.48828 11.043C6.48828 13.5309 8.51211 15.5547 11 15.5547C13.4879 15.5547 15.5117 13.5309 15.5117 11.043C15.5117 8.55508 13.4879 6.53125 11 6.53125ZM18.7773 0H3.22266C1.44375 0 0 1.44375 0 3.22266V18.7773C0 20.5562 1.44375 22 3.22266 22H18.7773C20.5562 22 22 20.5562 22 18.7773V3.22266C22 1.44375 20.5562 0 18.7773 0ZM11 16.8438C7.80317 16.8438 5.19922 14.2398 5.19922 11.043C5.19922 7.84605 7.80317 5.24219 11 5.24219C14.1968 5.24219 16.8008 7.84605 16.8008 11.043C16.8008 14.2398 14.1968 16.8438 11 16.8438ZM18.0898 5.24219C17.3809 5.24219 16.8008 4.66211 16.8008 3.95312C16.8008 3.24414 17.3809 2.66406 18.0898 2.66406C18.7988 2.66406 19.3789 3.24414 19.3789 3.95312C19.3789 4.66211 18.7988 5.24219 18.0898 5.24219ZM11 6.53125C8.51211 6.53125 6.48828 8.55508 6.48828 11.043C6.48828 13.5309 8.51211 15.5547 11 15.5547C13.4879 15.5547 15.5117 13.5309 15.5117 11.043C15.5117 8.55508 13.4879 6.53125 11 6.53125ZM11 6.53125C8.51211 6.53125 6.48828 8.55508 6.48828 11.043C6.48828 13.5309 8.51211 15.5547 11 15.5547C13.4879 15.5547 15.5117 13.5309 15.5117 11.043C15.5117 8.55508 13.4879 6.53125 11 6.53125ZM11 6.53125C8.51211 6.53125 6.48828 8.55508 6.48828 11.043C6.48828 13.5309 8.51211 15.5547 11 15.5547C13.4879 15.5547 15.5117 13.5309 15.5117 11.043C15.5117 8.55508 13.4879 6.53125 11 6.53125Z" />
+                            </svg>
+
+                        </a>
+                    </div>
+                    <div class="header__top-burger">
+                        <span></span>
+                    </div>
+                </div>
+                <nav class="header__bottom">
+                    <ul class="header__nav">
+                        <li class="header__nav-item header__nav-item--openlist">
+                            <a href="#" class="header__nav-link">
+                                БАСТАПҚЫ
+                            </a>
+                            <span class="header__nav-item-up"></span>
+                            <div class="header-submenu">
+                                <ul class="header-submenu__list">
+                                    <li class="header-submenu__item">
+                                        <a href="#" class="header-submenu__link">
+                                            Редакция
+                                        </a>
+                                    </li>
+                                    <li class="header-submenu__item">
+                                        <a href="#" class="header-submenu__link">
+                                            Газет Тарихы
+                                        </a>
+                                    </li>
+                                    <li class="header-submenu__item">
+                                        <a href="#" class="header-submenu__link">
+                                            PDF НҰСҚАҒА ЖАЗЫЛУ
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__nav-item header__nav-item--openlist">
+                            <a href="#" class="header__nav-link">
+                                ЖАҢАЛЫҚТАР
+                            </a>
+                            <span class="header__nav-item-up"></span>
+                            <div class="header-submenu">
+                                <ul class="header-submenu__list">
+                                    <li class="header-submenu__item">
+                                        <a href="#" class="header-submenu__link">
+                                            САЯСАТ
+                                        </a>
+                                    </li>
+                                    <li class="header-submenu__item">
+                                        <a href="#" class="header-submenu__link">
+                                            СПОРТ
+                                        </a>
+                                    </li>
+                                    <li class="header-submenu__item">
+                                        <a href="#" class="header-submenu__link">
+                                            ҚОҒАМ
+                                        </a>
+                                    </li>
+                                    <li class="header-submenu__item">
+                                        <a href="#" class="header-submenu__link">
+                                            ДЕНСАУЛЫҚ
+                                        </a>
+                                    </li>
+                                    <li class="header-submenu__item">
+                                        <a href="#" class="header-submenu__link">
+                                            РУХАНИЯТ
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">
+                                ИНФОРМЛЕНТА
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">
+                                АЛАШ
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">
+                                ӘДЕБИЕТ
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">
+                                ВИДЕО
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">
+                                PDF АРХИВ
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+
+
+
+
+
+
+
+
+        <section class="slider-intro">
+            <div class="container">
+
+                <div class="slider-intro__button" href="#">
+                    <div class="slider-intro__button-wrapper">
+                        <a href="#" class="slider-intro__button-link" href="#">Ашық хатқа қол қою</a>
+                    </div>
+                </div>
+
+                <div class="slider-intro__wrapper">
+
+
+                    <div class="slider-intro__item">
+                        <div class="slider-intro__item-text">
+                            <a href="#" class="slider-intro__item-text-title">
+
+                                «ХАЛЫҚ ҚАҺАРМАНЫ» атағына ұсынылған Н.ОРАЗБЕКТІҢ құжаттары 2022 жылы ҚАРАСТЫРЫЛАДЫ –
+                                вице-министр Дәуешов
+                            </a>
+                            <div class="slider-intro__item-text-date">
+                                2021 ж. Наурыз 9
+                            </div>
+                        </div>
+                        <div class="slider-intro__images">
+                            <img class="slider-intro__images-img" src="images/slider/one.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="slider-intro__item">
+                        <div class="slider-intro__item-text">
+                            <a href="#" class="slider-intro__item-text-title">
+                                Әйелдердің ерік-жігері қиындықты еңсеруімізге септігін тигізуде – Тоқаев
+                            </a>
+                            <div class="slider-intro__item-text-date">
+                                2021 ж. Наурыз 9
+                            </div>
+                        </div>
+                        <div class="slider-intro__images">
+                            <img class="slider-intro__images-img" src="images/slider/one.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="slider-intro__item">
+                        <div class="slider-intro__item-text">
+                            <a href="#" class="slider-intro__item-text-title">
+                                Әйелдердің ерік-жігері қиындықты еңсеруімізге септігін тигізуде – Тоқаев
+                            </a>
+                            <div class="slider-intro__item-text-date">
+                                2021 ж. Наурыз 9
+                            </div>
+                        </div>
+                        <div class="slider-intro__images">
+                            <img class="slider-intro__images-img" src="images/slider/one.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="slider-intro__item">
+                        <div class="slider-intro__item-text">
+                            <a href="#" class="slider-intro__item-text-title">
+                                Әйелдердің ерік-жігері қиындықты еңсеруімізге септігін тигізуде – Тоқаев
+                            </a>
+                            <div class="slider-intro__item-text-date">
+                                2021 ж. Наурыз 9
+                            </div>
+                        </div>
+                        <div class="slider-intro__images">
+                            <img class="slider-intro__images-img" src="images/slider/one.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="slider-intro__item">
+                        <div class="slider-intro__item-text">
+                            <a href="#" class="slider-intro__item-text-title">
+                                Әйелдердің ерік-жігері қиындықты еңсеруімізге септігін тигізуде – Тоқаев
+                            </a>
+                            <div class="slider-intro__item-text-date">
+                                2021 ж. Наурыз 9
+                            </div>
+                        </div>
+                        <div class="slider-intro__images">
+                            <img class="slider-intro__images-img" src="images/slider/one.jpg" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="news-slider slider-wrapper slider-wrapper--bg">
+            <div class="container slider-wrapper__container">
+                <div class="slider-wrapper__title-control slider-wrapper__title-control--news">
+                    <h2 class="slider-wrapper__title slider-wrapper__title--news">
+                        ЖАҢАЛЫҚТАР
+                    </h2>
+                    <div class="news-slider__controls slider-wrapper__control slider-wrapper__control--white">
+                    </div>
+                </div>
+
+                <div class="sliderdouble">
+                    <div class="sliderdouble__item">
+                        <a href="#" class="sliderdouble__link">
+                            <div class="sliderdouble__info">
+                                <div class="sliderdouble__info-image sliderdouble__info-image--button">
+                                    <img src="images/sliderdouble/one.jpeg" alt="">
+                                    <div class="sliderdouble__info-image-button">ЖАҢАЛЫҚТАР</div>
+                                </div>
+                                <div class="sliderdouble__info-title slider-wrapper__globaltitle">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                            </div>
+                            <div class="sliderdouble__date slider-wrapper__globaldate">
+                                2021 ж. 03 қараша
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderdouble__item">
+                        <a href="#" class="sliderdouble__link">
+                            <div class="sliderdouble__info">
+                                <div class="sliderdouble__info-image">
+                                    <img src="images/sliderdouble/one.jpeg" alt="">
+                                </div>
+                                <div class="sliderdouble__info-title slider-wrapper__globaltitle">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                            </div>
+                            <div class="sliderdouble__date slider-wrapper__globaldate">
+                                2021 ж. 03 қараша
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderdouble__item">
+                        <a href="#" class="sliderdouble__link">
+                            <div class="sliderdouble__info">
+                                <div class="sliderdouble__info-image">
+                                    <img src="images/sliderdouble/one.jpeg" alt="">
+                                </div>
+                                <div class="sliderdouble__info-title slider-wrapper__globaltitle">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                            </div>
+                            <div class="sliderdouble__date slider-wrapper__globaldate">
+                                2021 ж. 03 қараша
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderdouble__item">
+                        <a href="#" class="sliderdouble__link">
+                            <div class="sliderdouble__info">
+                                <div class="sliderdouble__info-image">
+                                    <img src="images/sliderdouble/one.jpeg" alt="">
+                                </div>
+                                <div class="sliderdouble__info-title slider-wrapper__globaltitle">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                            </div>
+                            <div class="sliderdouble__date slider-wrapper__globaldate">
+                                2021 ж. 03 қараша
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slider-wrapper__link">
+                    <a class='slider-wrapper__link-link' href="#">Толығырақ</a>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+        <section class="news">
+            <div class="container news__container">
+                <div class="news__column">
+                    <div class="news__column-top news__inner">
+                        <div class="news__column-name">
+                            <h2>КӨП ҚАРАЛҒАНДАР</h2>
+                        </div>
+                        <ul data-simplebar class="news__list">
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="news__post news__inner">
+
+                        <div class="news__post-image">
+                            <img src="images/news/bottom.png" alt="">
+                        </div>
+                        <div class="news__post-inner">
+                            <div class="news__post-top">
+                                <div class="news__post-name">
+                                    ТАҢДАУЛЫ
+                                </div>
+                                <div class="news__post-title">
+                                    Қандастардың азаматтық алу рәсімдері оңтайландырылуда - вице-премьер
+                                </div>
+                                <div class="news__post-text">
+                                    Көші-қон комитеті құрылатын болады. Қандастардың ұлты қазақ екенін айқындау мәселесі
+                                    шешімін табуда 2025 жылға дейін 80 мың қандас көшіп келедіҚР
+                                    Парламенті Мәжілісі депутаты, «Ақ жол» партиясы фракциясы мүшесі Қазыбек Иса
+                                    Қазақстан Республикасы Үкіметіне "ҚАНДАСТАРҒА БІРДЕН АЗАМАТТЫҚ БЕРІ...
+                                </div>
+                            </div>
+
+                            <div class="news__post-bottom">
+                                <div class="news__post-stat">
+                                    <span class="news__view">550</span> <span class="news__comment">1</span>
+                                </div>
+                                <div class="news__post-date">
+                                    2021 ж. 24 маусым
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="news__column">
+                    <div class="news__column-top news__inner">
+                        <div class="news__column-name">
+                            <h2>КӨП ҚАРАЛҒАНДАР</h2>
+                        </div>
+                        <ul data-simplebar class="news__list">
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link" href="#">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="news__column-bottom news__inner">
+                        <div class="news__column-name">
+                            <h2>КӨП ҚАРАЛҒАНДАР</h2>
+                        </div>
+                        <ul data-simplebar class="news__list news__list--bottom">
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__list-item">
+                                <div class="news__list-item-title">
+                                    <h3><a href="#" class="news__list-item-link">БАСТЫ МАҚАЛАЛАР</a></h3>
+                                    <div class="news__list-item-date">2018 ж. 04 қыркүйек</div>
+                                </div>
+                                <div class="news__list-item-text">
+                                    <a href="#">
+                                        КОНСТИТУЦИЯДАН 7-баптың 2-тармағын АЛЫП ТАСТАП, МЕМЛЕКЕТТІК ТІЛ ТУРАЛЫ ЗАҢ
+                                        ҚАБЫЛДАУ КЕРЕК! Ашық хат
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="news__column news__column--pdf">
+                    <div class="news__pdf news__inner">
+                        <div class="news__pdf-name news__column-name">
+                            PDF НҰСҚА
+                        </div>
+                        <div class="news__pdf-image">
+                            <a href="#">
+                                <img src="images/news/snimok.jpg" alt="">
+                                <div class="news__pdf-background">
+                                    <div class="news__pdf-background-name">
+                                        №18 (940) 3.05.2021 jul
+                                    </div>
+                                    <div class="news__pdf-background-date">
+                                        2014 ж. 18 маусым
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="news__pdf-title news__column-name">
+                            PDF НҰСҚАҒА ЖАЗЫЛУ
+                        </div>
+                        <div class="news__pdf-info">
+                            Жазылсаңыз, сіздің email-ға газетіміздің PDF нұсқасын жіберіп отырамыз.
+                        </div>
+                        <form class="news__form" action="">
+                            <label class="news__form-label" for="">
+                                <input class="news__form-input" type="text" name="" id="" placeholder="Атыңыз">
+                            </label>
+
+                            <label class="news__form-label" for="">
+                                <input class="news__form-input" type="text" name="" id="" placeholder="e-mail">
+                            </label>
+                            <button class="news__form-button"> Жазулу</button>
+                        </form>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+        </section>
+
+        <section class="novos-two">
+            <div class="container">
+                <div class="intro-bottom__grid">
+                    <div class="intro-bottom__grid-item  intro-bottom__grid-item--vh">
+                        <div class="intro-bottom__grid-image intro-bottom__grid-image--big">
+                            <img src="images/novos-two/one.jpg" alt="">
+                            <div class="intro-bottom__grid-image-descr">
+                                <div class="intro-bottom__grid-image-title">
+                                    Тоқаев: Инфляция деңгейінің өсуіне қарсы жұмыстарға ерекше назар аудару керек
+                                </div>
+                                <div class="intro-bottom__grid-image-date">
+                                    20.07.2021
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-bottom__grid-item">
+                        <div class="intro-bottom__title intro-bottom__title--right title">
+                            Ұсынылады
+                        </div>
+                        <ul class="intro-bottom__list intro-bottom__list--text">
+                            <li class="intro-bottom__list-item">
+                                <a class="intro-bottom__list-link" href="#">
+                                    <div class="intro-bottom__list-item-title">
+                                        Асхат Аймағамбетов: Балалар Мемлекеттік тілде білім алу керек
+
+                                    </div>
+                                    <div class="intro-bottom__list-item-date">
+                                        05.07.2021,
+                                        <span>
+                                            12:05
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="intro-bottom__list-item">
+                                <a class="intro-bottom__list-link" href="#">
+                                    <div class="intro-bottom__list-item-title">
+                                        Еңбекқор ұлт болсақ, көздеген мақсаттарымызға жетеміз - Тоқаев
+                                    </div>
+                                    <div class="intro-bottom__list-item-date">
+                                        01.07.2021,
+                                        <span>
+                                            15:13
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="intro-bottom__list-item">
+                                <a class="intro-bottom__list-link" href="#">
+                                    <div class="intro-bottom__list-item-title">
+                                        Перейти к прозрачному механизму формирования ТС ввозимых товаров
+                                    </div>
+                                    <div class="intro-bottom__list-item-date">
+                                        02.07.2021,
+                                        <span>
+                                            23:31
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="intro-bottom__list-item">
+                                <a class="intro-bottom__list-link" href="#">
+                                    <div class="intro-bottom__list-item-title">
+                                        Развитие казахского языка: нужен закон и специалисты
+                                    </div>
+                                    <div class="intro-bottom__list-item-date">
+                                        14.07.2021,
+                                        <span>
+                                            12:01
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="intro-bottom__list-item">
+                                <a class="intro-bottom__list-link" href="#">
+                                    <div class="intro-bottom__list-item-title">
+                                        Мы должны быть солидарны в том, что все обязаны знать государственный язык
+                                    </div>
+                                    <div class="intro-bottom__list-item-date">
+                                        12.07.2021,
+                                        <span>
+                                            23:31
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="kogam slider-wrapper slider-wrapper--bg">
+            <div class="container slider-wrapper__container">
+                <div class="slider-wrapper__title-control">
+                    <h2 class="slider-wrapper__title">
+                        ҚОҒАМ
+                    </h2>
+                    <div class="kogam__controls slider-wrapper__control slider-wrapper__control--white"></div>
+                </div>
+                <div class="sliderdoublequarter kogam">
+                    <div class="sliderdoublequarter__item">
+                        <div class="sliderdoublequarter-top">
+                            <a href="#" class="sliderdoublequarter-top__link">
+                                <div class="sliderdoublequarter-top__info">
+                                    <div class="sliderdoublequarter-top__info-image">
+                                        <img src="images/sliderdoublequarter/big-one.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-top__info-title slider-wrapper__globaltitle">
+                                        «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                        қажет
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-top__date slider-wrapper__globaldate">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sliderdoublequarter-bottom">
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter/small-one.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 02 қараша
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter/small-two.jpeg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        КІТАПХАНА ҒИМАРАТЫ МӘСЕЛЕСІ 2022 ЖЫЛЫ ШЕШІМІН ТАБАДЫ
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 01 қараша
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sliderdoublequarter__item">
+                        <div class="sliderdoublequarter-top">
+                            <a href="#" class="sliderdoublequarter-top__link">
+                                <div class="sliderdoublequarter-top__info">
+                                    <div class="sliderdoublequarter-top__info-image">
+                                        <img src="images/sliderdoublequarter/big-two.jpeg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-top__info-title slider-wrapper__globaltitle">
+                                        «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                        қажет «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды
+                                        қорғау
+                                        қажет
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-top__date slider-wrapper__globaldate">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sliderdoublequarter-bottom">
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter/small-three.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 02 қараша
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter/small-four.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        КІТАПХАНА ҒИМАРАТЫ МӘСЕЛЕСІ 2022 ЖЫЛЫ ШЕШІМІН ТАБАДЫ
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 01 қараша
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sliderdoublequarter__item">
+                        <div class="sliderdoublequarter-top">
+                            <a href="#" class="sliderdoublequarter-top__link">
+                                <div class="sliderdoublequarter-top__info">
+                                    <div class="sliderdoublequarter-top__info-image">
+                                        <img src="images/sliderdoublequarter/big-one.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-top__info-title slider-wrapper__globaltitle">
+                                        «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                        қажет
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-top__date slider-wrapper__globaldate">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sliderdoublequarter-bottom">
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter/small-one.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 02 қараша
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter/small-two.jpeg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        КІТАПХАНА ҒИМАРАТЫ МӘСЕЛЕСІ 2022 ЖЫЛЫ ШЕШІМІН ТАБАДЫ
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 01 қараша
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sliderdoublequarter__item">
+                        <div class="sliderdoublequarter-top">
+                            <a href="#" class="sliderdoublequarter-top__link">
+                                <div class="sliderdoublequarter-top__info">
+                                    <div class="sliderdoublequarter-top__info-image">
+                                        <img src="images/sliderdoublequarter/big-two.jpeg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-top__info-title slider-wrapper__globaltitle">
+                                        «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                        қажет «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды
+                                        қорғау
+                                        қажет
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-top__date slider-wrapper__globaldate">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sliderdoublequarter-bottom">
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter/small-three.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 02 қараша
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter/small-four.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        КІТАПХАНА ҒИМАРАТЫ МӘСЕЛЕСІ 2022 ЖЫЛЫ ШЕШІМІН ТАБАДЫ
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 01 қараша
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-wrapper__link">
+                    <a class="slider-wrapper__link-link" href="#">Толығырақ</a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="sayat slider-wrapper">
+            <div class="container slider-wrapper__container">
+                <div class="slider-wrapper__title-control">
+                    <h2 class="slider-wrapper__title">
+                        САЯСАТ
+                    </h2>
+                    <div class="sayat__controls slider-wrapper__control"></div>
+                </div>
+                <div class="slidertriple">
+                    <div class="slidertriple__item">
+                        <a href="#" class="slidertriple__link">
+                            <div class="slidertriple__image">
+                                <img src="images/slider-triple/one.jpeg" alt="">
+                            </div>
+                            <div class="slidertriple__text">
+                                <div class="slidertriple__text-title slider-wrapper__globaltitle">
+                                    Тоқаев: Моноқалалар экономикамызды дамытуға едәуір үлес қосып отыр
+                                </div>
+                                <div class="slidertriple__text-info slider-wrapper__globaldate">
+                                    <div class="slidertriple__text-info-stats">
+                                        <span class="slidertriple__text-info-stats-view">39</span> <span
+                                            class="slidertriple__text-info-stats-comment">0</span>
+                                    </div>
+                                    <div class="slidertriple__text-info-date">
+                                        2021 ж. 03 қараша
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slidertriple__item">
+                        <a href="#" class="slidertriple__link">
+                            <div class="slidertriple__image">
+                                <img src="images/slider-triple/two.jpg" alt="">
+                            </div>
+                            <div class="slidertriple__text">
+                                <div class="slidertriple__text-title slider-wrapper__globaltitle">
+                                    Тоқаев: Моноқалалар экономикамызды дамытуға едәуір үлес қосып отыр
+                                    Тоқаев: Моноқалалар экономикамызды дамытуға едәуір үлес қосып отыр
+
+                                </div>
+                                <div class="slidertriple__text-info slider-wrapper__globaldate">
+                                    <div class="slidertriple__text-info-stats">
+                                        <span class="slidertriple__text-info-stats-view">39</span> <span
+                                            class="slidertriple__text-info-stats-comment">0</span>
+                                    </div>
+                                    <div class="slidertriple__text-info-date">
+                                        2021 ж. 03 қараша
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slidertriple__item">
+                        <a href="#" class="slidertriple__link">
+                            <div class="slidertriple__image">
+                                <img src="images/slider-triple/three.jpg" alt="">
+                            </div>
+                            <div class="slidertriple__text">
+                                <div class="slidertriple__text-title slider-wrapper__globaltitle">
+                                    Тоқаев: Моноқалалар экономикамызды дамытуға едәуір үлес қосып отыр
+                                </div>
+                                <div class="slidertriple__text-info slider-wrapper__globaldate">
+                                    <div class="slidertriple__text-info-stats">
+                                        <span class="slidertriple__text-info-stats-view">39</span> <span
+                                            class="slidertriple__text-info-stats-comment">0</span>
+                                    </div>
+                                    <div class="slidertriple__text-info-date">
+                                        2021 ж. 03 қараша
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slidertriple__item">
+                        <a href="#" class="slidertriple__link">
+                            <div class="slidertriple__image">
+                                <img src="images/slider-triple/three.jpg" alt="">
+                            </div>
+                            <div class="slidertriple__text">
+                                <div class="slidertriple__text-title slider-wrapper__globaltitle">
+                                    Тоқаев: Моноқалалар экономикамызды дамытуға едәуір үлес қосып отыр
+                                </div>
+                                <div class="slidertriple__text-info slider-wrapper__globaldate">
+                                    <div class="slidertriple__text-info-stats">
+                                        <span class="slidertriple__text-info-stats-view">39</span> <span
+                                            class="slidertriple__text-info-stats-comment">0</span>
+                                    </div>
+                                    <div class="slidertriple__text-info-date">
+                                        2021 ж. 03 қараша
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slidertriple__item">
+                        <a href="#" class="slidertriple__link">
+                            <div class="slidertriple__image">
+                                <img src="images/slider-triple/three.jpg" alt="">
+                            </div>
+                            <div class="slidertriple__text">
+                                <div class="slidertriple__text-title slider-wrapper__globaltitle">
+                                    Тоқаев: Моноқалалар экономикамызды дамытуға едәуір үлес қосып отыр
+                                </div>
+                                <div class="slidertriple__text-info slider-wrapper__globaldate">
+                                    <div class="slidertriple__text-info-stats">
+                                        <span class="slidertriple__text-info-stats-view">39</span> <span
+                                            class="slidertriple__text-info-stats-comment">0</span>
+                                    </div>
+                                    <div class="slidertriple__text-info-date">
+                                        2021 ж. 03 қараша
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slidertriple__item">
+                        <a href="#" class="slidertriple__link">
+                            <div class="slidertriple__image">
+                                <img src="images/slider-triple/three.jpg" alt="">
+                            </div>
+                            <div class="slidertriple__text">
+                                <div class="slidertriple__text-title slider-wrapper__globaltitle">
+                                    Тоқаев: Моноқалалар экономикамызды дамытуға едәуір үлес қосып отыр
+                                </div>
+                                <div class="slidertriple__text-info slider-wrapper__globaldate">
+                                    <div class="slidertriple__text-info-stats">
+                                        <span class="slidertriple__text-info-stats-view">39</span> <span
+                                            class="slidertriple__text-info-stats-comment">0</span>
+                                    </div>
+                                    <div class="slidertriple__text-info-date">
+                                        2021 ж. 03 қараша
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slider-wrapper__link">
+                    <a class="slider-wrapper__link-link" href="#">Толығырақ</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="novos-one">
+            <div class="container">
+                <div class="intro-bottom__grid">
+                    <div class="intro-bottom__grid-item">
+                        <div class="intro-bottom__title title">
+                            Ұсынылады
+                        </div>
+                        <ul class="intro-bottom__list intro-bottom__list--text">
+                            <li class="intro-bottom__list-item">
+                                <a class="intro-bottom__list-link" href="#">
+                                    <div class="intro-bottom__list-item-title">
+                                        Мамандар «Омикронға» қарсы екпе мен бетпердені атады
+
+                                    </div>
+                                    <div class="intro-bottom__list-item-date">
+                                        20.03.2021,
+                                        <span>
+                                            15:10
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="intro-bottom__list-item">
+                                <a class="intro-bottom__list-link" href="#">
+                                    <div class="intro-bottom__list-item-title">
+                                        Исламда ер адам әйеліне «жақсы көремін» деп айтуы керек пе?
+                                    </div>
+                                    <div class="intro-bottom__list-item-date">
+                                        20.08.2021,
+                                        <span>
+                                            23:31
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="intro-bottom__list-item">
+                                <a class="intro-bottom__list-link" href="#">
+                                    <div class="intro-bottom__list-item-title">
+                                        Қазақ тілін меңгеруге мүмкіндік беретін мобильді қосымша шықты
+                                    </div>
+                                    <div class="intro-bottom__list-item-date">
+                                        20.08.2021,
+                                        <span>
+                                            23:31
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="intro-bottom__list-item">
+                                <a class="intro-bottom__list-link" href="#">
+                                    <div class="intro-bottom__list-item-title">
+                                        Дүмше "Сабина келін" ҚАЗАҚ ТІЛІН БІЛМЕУІН өзінің күштілігі деп санайды екен
+                                    </div>
+                                    <div class="intro-bottom__list-item-date">
+                                        20.08.2021,
+                                        <span>
+                                            23:31
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="intro-bottom__list-item">
+                                <a class="intro-bottom__list-link" href="#">
+                                    <div class="intro-bottom__list-item-title">
+                                        ҚАРЖЫ САЛАСЫНА ҚАТАҢ БАҚЫЛАУ ҚАЖЕТ
+                                    </div>
+                                    <div class="intro-bottom__list-item-date">
+                                        20.08.2021,
+                                        <span>
+                                            23:31
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="intro-bottom__grid-item">
+                        <ul class="intro-bottom__list intro-bottom__list--image">
+                            <li class="intro-bottom__list-item">
+                                <a class="intro-bottom__list-link" href="#">
+                                    <div class="intro-bottom__list-item-image">
+                                        <img src="images/novos-one/small/oneee.jpg" alt="">
+                                    </div>
+                                    <div class="intro-bottom__list-item-info">
+                                        <div class="intro-bottom__list-item-title">
+                                            WhatsApp-тың бізге беймәлім 10 сыры
+                                        </div>
+                                        <div class="intro-bottom__list-item-date">
+                                            20.08.2021,
+                                            <span>
+                                                23:31
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="intro-bottom__list-item">
+                                <a class="intro-bottom__list-link" href="#">
+                                    <div class="intro-bottom__list-item-image">
+                                        <img src="images/novos-one/small/two.jpg" alt="">
+                                    </div>
+                                    <div class="intro-bottom__list-item-info">
+                                        <div class="intro-bottom__list-item-title">
+                                            РФ-дан жеткізілген көліктер мәселесі: Әрбір өңірде Call-орталықтар ашылды
+                                        </div>
+                                        <div class="intro-bottom__list-item-date">
+                                            20.08.2021,
+                                            <span>
+                                                23:31
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="intro-bottom__list-item">
+                                <a class="intro-bottom__list-link" href="#">
+                                    <div class="intro-bottom__list-item-image">
+                                        <img src="images/novos-one/small/three.jpg" alt="">
+                                    </div>
+                                    <div class="intro-bottom__list-item-info">
+                                        <div class="intro-bottom__list-item-title">
+                                            Биыл Қазақстанда қыс қатты бола ма?
+                                        </div>
+                                        <div class="intro-bottom__list-item-date">
+                                            20.08.2021,
+                                            <span>
+                                                23:31
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="intro-bottom__list-item">
+                                <a class="intro-bottom__list-link" href="#">
+                                    <div class="intro-bottom__list-item-image">
+                                        <img src="images/novos-one/small/four.jpg" alt="">
+                                    </div>
+                                    <div class="intro-bottom__list-item-info">
+                                        <div class="intro-bottom__list-item-title">
+                                            РФ-дан жеткізілген көліктер мәселесі: Әрбір өңірде Call-орталықтар ашылды
+                                        </div>
+                                        <div class="intro-bottom__list-item-date">
+                                            20.08.2021,
+                                            <span>
+                                                23:31
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="intro-bottom__grid-item">
+                        <div class="intro-bottom__grid-image">
+                            <img src="images/novos-one/ds.jpg" alt="">
+                            <div class="intro-bottom__grid-image-descr">
+                                <div class="intro-bottom__grid-image-title">
+                                    Тоқаев: Инфляция деңгейінің өсуіне қарсы жұмыстарға ерекше назар аудару керек
+                                </div>
+                                <div class="intro-bottom__grid-image-date">
+                                    20.07.2021
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section class="inform slider-wrapper slider-wrapper--bg">
+            <div class="container slider-wrapper__container ">
+                <div class="slider-wrapper__title-control">
+                    <h2 class="slider-wrapper__title">
+                        Информлента
+                    </h2>
+                    <div class="inform__controls slider-wrapper__control slider-wrapper__control--white"></div>
+                </div>
+                <div class="sliderdoublequarter">
+                    <div class="sliderdoublequarter__item">
+                        <div class="sliderdoublequarter-top">
+                            <a href="#" class="sliderdoublequarter-top__link">
+                                <div class="sliderdoublequarter-top__info">
+                                    <div class="sliderdoublequarter-top__info-image">
+                                        <img src="images/sliderdoublequarter-inform/l-one.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-top__info-title slider-wrapper__globaltitle">
+                                        «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                        қажет
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-top__date slider-wrapper__globaldate">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sliderdoublequarter-bottom">
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter-inform/xs-one.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 02 қараша
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter-inform/xs-two.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        КІТАПХАНА ҒИМАРАТЫ МӘСЕЛЕСІ 2022 ЖЫЛЫ ШЕШІМІН ТАБАДЫ
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 01 қараша
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sliderdoublequarter__item">
+                        <div class="sliderdoublequarter-top">
+                            <a href="#" class="sliderdoublequarter-top__link">
+                                <div class="sliderdoublequarter-top__info">
+                                    <div class="sliderdoublequarter-top__info-image">
+                                        <img src="images/sliderdoublequarter-inform/l-two.jpeg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-top__info-title slider-wrapper__globaltitle">
+                                        «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                        қажет «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды
+                                        қорғау
+                                        қажет
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-top__date slider-wrapper__globaldate">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sliderdoublequarter-bottom">
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter-inform/xs-three.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 02 қараша
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter-inform/xs-four.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        КІТАПХАНА ҒИМАРАТЫ МӘСЕЛЕСІ 2022 ЖЫЛЫ ШЕШІМІН ТАБАДЫ
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 01 қараша
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sliderdoublequarter__item">
+                        <div class="sliderdoublequarter-top">
+                            <a href="#" class="sliderdoublequarter-top__link">
+                                <div class="sliderdoublequarter-top__info">
+                                    <div class="sliderdoublequarter-top__info-image">
+                                        <img src="images/sliderdoublequarter-inform/l-one.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-top__info-title slider-wrapper__globaltitle">
+                                        «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                        қажет
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-top__date slider-wrapper__globaldate">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sliderdoublequarter-bottom">
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter-inform/xs-one.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 02 қараша
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter-inform/xs-two.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        КІТАПХАНА ҒИМАРАТЫ МӘСЕЛЕСІ 2022 ЖЫЛЫ ШЕШІМІН ТАБАДЫ
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 01 қараша
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sliderdoublequarter__item">
+                        <div class="sliderdoublequarter-top">
+                            <a href="#" class="sliderdoublequarter-top__link">
+                                <div class="sliderdoublequarter-top__info">
+                                    <div class="sliderdoublequarter-top__info-image">
+                                        <img src="images/sliderdoublequarter-inform/l-two.jpeg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-top__info-title slider-wrapper__globaltitle">
+                                        «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                        қажет «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды
+                                        қорғау
+                                        қажет
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-top__date slider-wrapper__globaldate">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sliderdoublequarter-bottom">
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter-inform/xs-three.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 02 қараша
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter-inform/xs-four.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        КІТАПХАНА ҒИМАРАТЫ МӘСЕЛЕСІ 2022 ЖЫЛЫ ШЕШІМІН ТАБАДЫ
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 01 қараша
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-wrapper__link">
+                    <a class="slider-wrapper__link-link" href="#">Толығырақ</a>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section class="sen slider-wrapper">
+            <div class="container slider-wrapper__container ">
+                <div class="slider-wrapper__title-control">
+                    <h2 class="slider-wrapper__title">
+                        СЕН ТҰР, МЕН АЙТАЙЫН
+                    </h2>
+                    <div class="sen__controls slider-wrapper__control"></div>
+                </div>
+                <div class="sliderdoubletriple">
+                    <div class="sliderdoubletriple__item">
+                        <div class="sliderdoubletriple-top">
+                            <a href="#" class="sliderdoubletriple-top__link">
+                                <div class="sliderdoubletriple-top__info">
+                                    <div class="sliderdoubletriple-top__info-image">
+                                        <img src="images/sliderdouble-triple/big-one.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoubletriple-top__info-title slider-wrapper__globaltitle">
+                                        «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                        қажет
+                                    </div>
+                                </div>
+                                <div class="sliderdoubletriple-top__date slider-wrapper__globaldate">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoubletriple-top__link">
+                                <div class="sliderdoubletriple-top__info">
+                                    <div class="sliderdoubletriple-top__info-image">
+                                        <img src="images/sliderdouble-triple/big-two.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoubletriple-top__info-title slider-wrapper__globaltitle">
+                                        «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                        қажет «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды
+                                        қорғау
+                                        қажет
+                                    </div>
+                                </div>
+                                <div class="sliderdoubletriple-top__date slider-wrapper__globaldate">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sliderdoubletriple-bottom sliderdoubletriple-bottom--sen">
+                            <a href="#" class="sliderdoubletriple-bottom__link">
+                                <div class="sliderdoubletriple-bottom__image">
+                                    <img src="images/sliderdouble-triple/small-one.jpg" alt="">
+                                </div>
+                                <div class="sliderdoubletriple-bottom__info">
+                                    <div class="sliderdoubletriple-bottom__info-text">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+                                    </div>
+                                    <div class="sliderdoubletriple-bottom__info-date slider-wrapper__globaldate">
+                                        2021 ж. 02 қараша
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoubletriple-bottom__link">
+                                <div class="sliderdoubletriple-bottom__image">
+                                    <img src="images/sliderdouble-triple/small-two.jpg" alt="">
+                                </div>
+                                <div class="sliderdoubletriple-bottom__info">
+                                    <div class="sliderdoubletriple-bottom__info-text">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+                                    </div>
+                                    <div class="sliderdoubletriple-bottom__info-date slider-wrapper__globaldate">
+                                        2021 ж. 02 қараша
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoubletriple-bottom__link">
+                                <div class="sliderdoubletriple-bottom__image">
+                                    <img src="images/sliderdouble-triple/small-three.jpg" alt="">
+                                </div>
+                                <div class="sliderdoubletriple-bottom__info">
+                                    <div class="sliderdoubletriple-bottom__info-text">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+                                    </div>
+                                    <div class="sliderdoubletriple-bottom__info-date slider-wrapper__globaldate">
+                                        2021 ж. 02 қараша
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sliderdoubletriple__item">
+                        <div class="sliderdoubletriple-top">
+                            <a href="#" class="sliderdoubletriple-top__link">
+                                <div class="sliderdoubletriple-top__info">
+                                    <div class="sliderdoubletriple-top__info-image">
+                                        <img src="images/sliderdouble-triple/big-one.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoubletriple-top__info-title slider-wrapper__globaltitle">
+                                        «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                        қажет
+                                    </div>
+                                </div>
+                                <div class="sliderdoubletriple-top__date slider-wrapper__globaldate">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoubletriple-top__link">
+                                <div class="sliderdoubletriple-top__info">
+                                    <div class="sliderdoubletriple-top__info-image">
+                                        <img src="images/sliderdouble-triple/big-two.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoubletriple-top__info-title slider-wrapper__globaltitle">
+                                        «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                        қажет
+                                    </div>
+                                </div>
+                                <div class="sliderdoubletriple-top__date slider-wrapper__globaldate">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sliderdoubletriple-bottom sliderdoubletriple-bottom--sen">
+                            <a href="#" class="sliderdoubletriple-bottom__link">
+                                <div class="sliderdoubletriple-bottom__image">
+                                    <img src="images/sliderdouble-triple/small-one.jpg" alt="">
+                                </div>
+                                <div class="sliderdoubletriple-bottom__info">
+                                    <div class="sliderdoubletriple-bottom__info-text">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+                                    </div>
+                                    <div class="sliderdoubletriple-bottom__info-date slider-wrapper__globaldate">
+                                        2021 ж. 02 қараша
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoubletriple-bottom__link">
+                                <div class="sliderdoubletriple-bottom__image">
+                                    <img src="images/sliderdouble-triple/small-two.jpg" alt="">
+                                </div>
+                                <div class="sliderdoubletriple-bottom__info">
+                                    <div class="sliderdoubletriple-bottom__info-text">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+                                    </div>
+                                    <div class="sliderdoubletriple-bottom__info-date slider-wrapper__globaldate">
+                                        2021 ж. 02 қараша
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoubletriple-bottom__link">
+                                <div class="sliderdoubletriple-bottom__image">
+                                    <img src="images/sliderdouble-triple/small-three.jpg" alt="">
+                                </div>
+                                <div class="sliderdoubletriple-bottom__info">
+                                    <div class="sliderdoubletriple-bottom__info-text">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+                                    </div>
+                                    <div class="sliderdoubletriple-bottom__info-date slider-wrapper__globaldate">
+                                        2021 ж. 02 қараша
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sliderdoubletriple__item">
+                        <div class="sliderdoubletriple-top">
+                            <a href="#" class="sliderdoubletriple-top__link">
+                                <div class="sliderdoubletriple-top__info">
+                                    <div class="sliderdoubletriple-top__info-image">
+                                        <img src="images/sliderdouble-triple/big-one.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoubletriple-top__info-title slider-wrapper__globaltitle">
+                                        «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                        қажет
+                                    </div>
+                                </div>
+                                <div class="sliderdoubletriple-top__date slider-wrapper__globaldate">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoubletriple-top__link">
+                                <div class="sliderdoubletriple-top__info">
+                                    <div class="sliderdoubletriple-top__info-image">
+                                        <img src="images/sliderdouble-triple/big-two.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoubletriple-top__info-title slider-wrapper__globaltitle">
+                                        «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                        қажет
+                                    </div>
+                                </div>
+                                <div class="sliderdoubletriple-top__date slider-wrapper__globaldate">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sliderdoubletriple-bottom sliderdoubletriple-bottom--sen">
+                            <a href="#" class="sliderdoubletriple-bottom__link">
+                                <div class="sliderdoubletriple-bottom__image">
+                                    <img src="images/sliderdouble-triple/small-one.jpg" alt="">
+                                </div>
+                                <div class="sliderdoubletriple-bottom__info">
+                                    <div class="sliderdoubletriple-bottom__info-text">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+                                    </div>
+                                    <div class="sliderdoubletriple-bottom__info-date slider-wrapper__globaldate">
+                                        2021 ж. 02 қараша
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoubletriple-bottom__link">
+                                <div class="sliderdoubletriple-bottom__image">
+                                    <img src="images/sliderdouble-triple/small-two.jpg" alt="">
+                                </div>
+                                <div class="sliderdoubletriple-bottom__info">
+                                    <div class="sliderdoubletriple-bottom__info-text">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+                                    </div>
+                                    <div class="sliderdoubletriple-bottom__info-date slider-wrapper__globaldate">
+                                        2021 ж. 02 қараша
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoubletriple-bottom__link">
+                                <div class="sliderdoubletriple-bottom__image">
+                                    <img src="images/sliderdouble-triple/small-three.jpg" alt="">
+                                </div>
+                                <div class="sliderdoubletriple-bottom__info">
+                                    <div class="sliderdoubletriple-bottom__info-text">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+                                    </div>
+                                    <div class="sliderdoubletriple-bottom__info-date slider-wrapper__globaldate">
+                                        2021 ж. 02 қараша
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sliderdoubletriple__item">
+                        <div class="sliderdoubletriple-top">
+                            <a href="#" class="sliderdoubletriple-top__link">
+                                <div class="sliderdoubletriple-top__info">
+                                    <div class="sliderdoubletriple-top__info-image">
+                                        <img src="images/sliderdouble-triple/big-one.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoubletriple-top__info-title slider-wrapper__globaltitle">
+                                        «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                        қажет
+                                    </div>
+                                </div>
+                                <div class="sliderdoubletriple-top__date slider-wrapper__globaldate">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoubletriple-top__link">
+                                <div class="sliderdoubletriple-top__info">
+                                    <div class="sliderdoubletriple-top__info-image">
+                                        <img src="images/sliderdouble-triple/big-two.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoubletriple-top__info-title slider-wrapper__globaltitle">
+                                        «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                        қажет
+                                    </div>
+                                </div>
+                                <div class="sliderdoubletriple-top__date slider-wrapper__globaldate">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sliderdoubletriple-bottom sliderdoubletriple-bottom--sen">
+                            <a href="#" class="sliderdoubletriple-bottom__link">
+                                <div class="sliderdoubletriple-bottom__image">
+                                    <img src="images/sliderdouble-triple/small-one.jpg" alt="">
+                                </div>
+                                <div class="sliderdoubletriple-bottom__info">
+                                    <div class="sliderdoubletriple-bottom__info-text">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+                                    </div>
+                                    <div class="sliderdoubletriple-bottom__info-date slider-wrapper__globaldate">
+                                        2021 ж. 02 қараша
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoubletriple-bottom__link">
+                                <div class="sliderdoubletriple-bottom__image">
+                                    <img src="images/sliderdouble-triple/small-two.jpg" alt="">
+                                </div>
+                                <div class="sliderdoubletriple-bottom__info">
+                                    <div class="sliderdoubletriple-bottom__info-text">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+                                    </div>
+                                    <div class="sliderdoubletriple-bottom__info-date slider-wrapper__globaldate">
+                                        2021 ж. 02 қараша
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoubletriple-bottom__link">
+                                <div class="sliderdoubletriple-bottom__image">
+                                    <img src="images/sliderdouble-triple/small-three.jpg" alt="">
+                                </div>
+                                <div class="sliderdoubletriple-bottom__info">
+                                    <div class="sliderdoubletriple-bottom__info-text">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+                                    </div>
+                                    <div class="sliderdoubletriple-bottom__info-date slider-wrapper__globaldate">
+                                        2021 ж. 02 қараша
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-wrapper__link">
+                    <a class="slider-wrapper__link-link" href="#">Толығырақ</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="ryh slider-wrapper slider-wrapper--bg">
+            <div class="container slider-wrapper__container ">
+                <div class="slider-wrapper__title-control">
+                    <h2 class="slider-wrapper__title">
+                        РУХАНИЯТ
+                    </h2>
+                    <div class="ryh__controls slider-wrapper__control slider-wrapper__control--white"></div>
+                </div>
+                <div class="sliderdoublequarter">
+                    <div class="sliderdoublequarter__item">
+                        <div class="sliderdoublequarter-top">
+                            <a href="#" class="sliderdoublequarter-top__link">
+                                <div class="sliderdoublequarter-top__info">
+                                    <div class="sliderdoublequarter-top__info-image">
+                                        <img src="images/sliderdoublequarter-ryh/l-one.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-top__info-title slider-wrapper__globaltitle">
+                                        «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                        қажет
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-top__date slider-wrapper__globaldate">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sliderdoublequarter-bottom">
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter-ryh/xs-one.jpeg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 02 қараша
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter-ryh/xs-two.jpeg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        КІТАПХАНА ҒИМАРАТЫ МӘСЕЛЕСІ 2022 ЖЫЛЫ ШЕШІМІН ТАБАДЫ
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 01 қараша
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sliderdoublequarter__item">
+                        <div class="sliderdoublequarter-top">
+                            <a href="#" class="sliderdoublequarter-top__link">
+                                <div class="sliderdoublequarter-top__info">
+                                    <div class="sliderdoublequarter-top__info-image">
+                                        <img src="images/sliderdoublequarter-ryh/l-two.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-top__info-title slider-wrapper__globaltitle">
+                                        «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                        қажет «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды
+                                        қорғау
+                                        қажет
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-top__date slider-wrapper__globaldate">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sliderdoublequarter-bottom">
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter-ryh/xs-three.jpeg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 02 қараша
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter-ryh/xs-four.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        КІТАПХАНА ҒИМАРАТЫ МӘСЕЛЕСІ 2022 ЖЫЛЫ ШЕШІМІН ТАБАДЫ
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 01 қараша
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sliderdoublequarter__item">
+                        <div class="sliderdoublequarter-top">
+                            <a href="#" class="sliderdoublequarter-top__link">
+                                <div class="sliderdoublequarter-top__info">
+                                    <div class="sliderdoublequarter-top__info-image">
+                                        <img src="images/sliderdoublequarter-ryh/l-one.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-top__info-title slider-wrapper__globaltitle">
+                                        «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                        қажет
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-top__date slider-wrapper__globaldate">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sliderdoublequarter-bottom">
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter-ryh/xs-one.jpeg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 02 қараша
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter-ryh/xs-two.jpeg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        КІТАПХАНА ҒИМАРАТЫ МӘСЕЛЕСІ 2022 ЖЫЛЫ ШЕШІМІН ТАБАДЫ
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 01 қараша
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sliderdoublequarter__item">
+                        <div class="sliderdoublequarter-top">
+                            <a href="#" class="sliderdoublequarter-top__link">
+                                <div class="sliderdoublequarter-top__info">
+                                    <div class="sliderdoublequarter-top__info-image">
+                                        <img src="images/sliderdoublequarter-ryh/l-two.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-top__info-title slider-wrapper__globaltitle">
+                                        «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                        қажет «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды
+                                        қорғау
+                                        қажет
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-top__date slider-wrapper__globaldate">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sliderdoublequarter-bottom">
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter-ryh/xs-three.jpeg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        "Ақ жол": Өз жерінен айырылып қалған көршілердің оқиғасынан сабақ алғанымыз жөн
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 02 қараша
+                                </div>
+                            </a>
+                            <a href="#" class="sliderdoublequarter-bottom__link">
+                                <div class="sliderdoublequarter-bottom__info">
+                                    <div class="sliderdoublequarter-bottom__info-image">
+                                        <img src="images/sliderdoublequarter-ryh/xs-four.jpg" alt="">
+                                    </div>
+                                    <div class="sliderdoublequarter-bottom__info-title slider-wrapper__globaltitle">
+                                        КІТАПХАНА ҒИМАРАТЫ МӘСЕЛЕСІ 2022 ЖЫЛЫ ШЕШІМІН ТАБАДЫ
+                                    </div>
+                                </div>
+                                <div class="sliderdoublequarter-bottom__date slider-wrapper__globaldate">
+                                    2021 ж. 01 қараша
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-wrapper__link">
+                    <a class="slider-wrapper__link-link" href="#">Толығырақ</a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="novos-three">
+            <div class="container">
+                <div class="intro-bottom__grid intro-bottom__grid--three">
+                    <div class="intro-bottom__grid-item">
+                        <div class="intro-bottom__title title">
+                            СПОРТ
+                        </div>
+                        <ul class="intro-bottom__list intro-bottom__list--images">
+                            <li class="intro-bottom__list-item">
+                                <a class="intro-bottom__list-link" href="#">
+                                    <div class="intro-bottom__list-item-image">
+                                        <img src="images/novos-three/one.jpeg" alt="">
+                                    </div>
+                                    <div class="intro-bottom__list-item-info">
+                                        <div class="intro-bottom__list-item-title">
+                                            «Ақ жол»: Спорттағы жемқорлық жойылмай - жастардың жолы ашылмайды
+                                        </div>
+                                        <div class="intro-bottom__list-item-date">
+                                            20.07.2021,
+                                            <span>
+                                                23:31
+                                            </span>
+                                        </div>
+                                    </div>
+
+
+                                </a>
+                            </li>
+                            <li class="intro-bottom__list-item">
+                                <a class="intro-bottom__list-link" href="#">
+                                    <div class="intro-bottom__list-item-image">
+                                        <img src="images/novos-three/two.jpg" alt="">
+                                    </div>
+                                    <div class="intro-bottom__list-item-info">
+                                        <div class="intro-bottom__list-item-title">
+                                            ШАРДАРАДАН 2021 ЖЫЛЫ ТӘУЕЛСІЗДІКТІҢ 30 ЖЫЛДЫҒЫНА 30 ӘЛЕМ ЧЕМПИОНЫ ШЫҚТЫ
+                                        </div>
+                                        <div class="intro-bottom__list-item-date">
+                                            20.07.2021,
+                                            <span>
+                                                23:31
+                                            </span>
+                                        </div>
+                                    </div>
+
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="intro-bottom__grid-item">
+                        <div class="intro-bottom__grid-image intro-bottom__grid-image--big">
+                            <img src="images/novos-three/big.jpg" alt="">
+                            <div class="intro-bottom__grid-image-descr">
+                                <div class="intro-bottom__grid-image-title">
+                                    Тоқаев: Инфляция деңгейінің өсуіне қарсы жұмыстарға ерекше назар аудару керек
+                                </div>
+                                <div class="intro-bottom__grid-image-date">
+                                    20.07.2021
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="intro-bottom__grid-item">
+                        <div class="intro-bottom__title intro-bottom__title--right title">
+                            ЭДЕБИЕТ
+                        </div>
+                        <ul class="intro-bottom__list intro-bottom__list--images">
+                            <li class="intro-bottom__list-item">
+                                <a class="intro-bottom__list-link" href="#">
+                                    <div class="intro-bottom__list-item-image">
+                                        <img src="images/novos-three/three.jpg" alt="">
+                                    </div>
+                                    <div class="intro-bottom__list-item-info">
+                                        <div class="intro-bottom__list-item-title">
+                                            Әбдіжәміл Нұрпейісовтың соңғы сөзі
+                                        </div>
+                                        <div class="intro-bottom__list-item-date">
+                                            20.07.2021,
+                                            <span>
+                                                23:31
+                                            </span>
+                                        </div>
+                                    </div>
+
+
+                                </a>
+                            </li>
+                            <li class="intro-bottom__list-item">
+                                <a class="intro-bottom__list-link" href="#">
+                                    <div class="intro-bottom__list-item-image">
+                                        <img src="images/novos-three/four.jpg" alt="">
+                                    </div>
+                                    <div class="intro-bottom__list-item-info">
+                                        <div class="intro-bottom__list-item-title">
+                                            Қазыбек ИСА: ЕЛ мен ТІЛ ЗАРЫ
+                                        </div>
+                                        <div class="intro-bottom__list-item-date">
+                                            20.07.2021,
+                                            <span>
+                                                23:31
+                                            </span>
+                                        </div>
+                                    </div>
+
+
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="alash slider-wrapper slider-wrapper__line">
+            <div class="container slider-wrapper__container ">
+                <div class="slider-wrapper__title-control">
+                    <h2 class="slider-wrapper__title">
+                        АЛАШ
+                    </h2>
+                    <div class="alash__controls slider-wrapper__control"></div>
+                </div>
+                <div class="sliderquarter">
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/alash/one.jpeg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/alash/two.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/alash/three.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/alash/four.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/sliderquarter/one.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/sliderquarter/one.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/sliderquarter/one.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slider-wrapper__link">
+                    <a class="slider-wrapper__link-link" href="#">Толығырақ</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="daylet slider-wrapper slider-wrapper__line">
+            <div class="container slider-wrapper__container ">
+                <div class="slider-wrapper__title-control">
+                    <h2 class="slider-wrapper__title">
+                        ДӘУЛЕТ
+                    </h2>
+                    <div class="daylet__controls slider-wrapper__control"></div>
+                </div>
+                <div class="sliderquarter">
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/dua/one.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/dua/two.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/dua/three.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/dua/four.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/sliderquarter/one.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/sliderquarter/one.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/sliderquarter/one.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slider-wrapper__link">
+                    <a class="slider-wrapper__link-link" href="#">Толығырақ</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="video slider-wrapper slider-wrapper--bg">
+            <div class="container slider-wrapper__container ">
+                <div class="slider-wrapper__title-control">
+                    <h2 class="slider-wrapper__title">
+                        ВИДЕО
+                    </h2>
+                    <div class="video__controls slider-wrapper__control slider-wrapper__control--white"></div>
+                </div>
+                <div class="sliderquarter">
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image sliderquarter__image--video">
+                                <img src="images/video/one.jpeg" alt="">
+                            </div>
+                            <div class="sliderquarter__videoinfo slider-wrapper__globaltitle">
+                                Әбунасыр Серіков: Қарсы шыққанды атып тастайсыңдар, асып тастайсыңдар (ВИДЕО)
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image sliderquarter__image--video">
+                                <img src="images/video/two.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__videoinfo slider-wrapper__globaltitle">
+                                Әбунасыр Серіков: Қарсы шыққанды атып тастайсыңдар, асып тастайсыңдар (ВИДЕО)
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image sliderquarter__image--video">
+                                <img src="images/video/three.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__videoinfo slider-wrapper__globaltitle">
+                                Әбунасыр Серіков: Қарсы шыққанды атып тастайсыңдар, асып тастайсыңдар (ВИДЕО)
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image sliderquarter__image--video">
+                                <img src="images/video/four.png" alt="">
+                            </div>
+                            <div class="sliderquarter__videoinfo slider-wrapper__globaltitle">
+                                Әбунасыр Серіков: Қарсы шыққанды атып тастайсыңдар, асып тастайсыңдар (ВИДЕО)
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image sliderquarter__image--video">
+                                <img src="images/sliderquarter-video/one.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__videoinfo slider-wrapper__globaltitle">
+                                Әбунасыр Серіков: Қарсы шыққанды атып тастайсыңдар, асып тастайсыңдар (ВИДЕО)
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image sliderquarter__image--video">
+                                <img src="images/sliderquarter-video/one.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__videoinfo slider-wrapper__globaltitle">
+                                Әбунасыр Серіков: Қарсы шыққанды атып тастайсыңдар, асып тастайсыңдар (ВИДЕО)
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image sliderquarter__image--video">
+                                <img src="images/sliderquarter-video/one.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__videoinfo slider-wrapper__globaltitle">
+                                Әбунасыр Серіков: Қарсы шыққанды атып тастайсыңдар, асып тастайсыңдар (ВИДЕО)
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image sliderquarter__image--video">
+                                <img src="images/sliderquarter-video/one.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__videoinfo slider-wrapper__globaltitle">
+                                Әбунасыр Серіков: Қарсы шыққанды атып тастайсыңдар, асып тастайсыңдар (ВИДЕО)
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slider-wrapper__link">
+                    <a class="slider-wrapper__link-link" href="#">Толығырақ</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="kerek slider-wrapper">
+            <div class="container slider-wrapper__container">
+                <div class="slider-wrapper__title-control">
+                    <h2 class="slider-wrapper__title">
+                        КЕРЕК КЕҢЕС
+                    </h2>
+                    <div class="kerek__controls slider-wrapper__control"></div>
+                </div>
+                <div class="sliderquarter">
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/kerek/one.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/kerek/two.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/kerek/three.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/kerek/four.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/sliderquarter/one.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/sliderquarter/one.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/sliderquarter/one.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slider-wrapper__link">
+                    <a class="slider-wrapper__link-link" href="#">Толығырақ</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="foto slider-wrapper slider-wrapper__line">
+            <div class="container slider-wrapper__container">
+                <div class="slider-wrapper__title-control">
+                    <h2 class="slider-wrapper__title">
+                        ФОТОБАЯН
+                    </h2>
+                    <div class="foto__controls slider-wrapper__control"></div>
+                </div>
+                <div class="sliderquarter">
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/foto/one.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/foto/two.jpeg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/foto/three.jpeg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/foto/four.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/sliderquarter/one.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/sliderquarter/one.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sliderquarter__item">
+                        <a href="#" class="sliderquarter__link">
+                            <div class="sliderquarter__image">
+                                <img src="images/sliderquarter/one.jpg" alt="">
+                            </div>
+                            <div class="sliderquarter__text">
+                                <div class="sliderquarter__text-title">
+                                    «Ақ жол»: Банктер мен коллекторларға тәуелді болып қалған азаматтарды қорғау
+                                    қажет
+                                </div>
+                                <div class="sliderquarter__text-date">
+                                    2021 ж. 03 қараша
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slider-wrapper__link">
+                    <a class="slider-wrapper__link-link" href="#">Толығырақ</a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-top__item footer-top__item--info">
+                    <div class="footer-top__item-title">
+                        «ҚАЗАҚ ҮНІ» ЖШС
+                    </div>
+                    <div class="footer-top__item-names">
+                        <p>Президент: Қаныш Жарылқасын</p>
+                        <p>Бас редактор: Азамат Тасқараұлы</p>
+                    </div>
+                </div>
+                <div class="footer-top__item footer-top__item--contacts">
+                    <div class="footer-top__item-title">
+                        БАЙЛАНЫС
+                    </div>
+                    <div class="footer-top__item-wrapper footer-top__item-wrapper--contacts">
+                        <div class="footer-top__item-box">
+                            <div class="footer-top__item-img">
+                                <img src="images/footer/mail.png" alt="">
+                            </div>
+                            <div class="footer-top__item-text">
+                                qazaquni@mail.ru
+                            </div>
+                        </div>
+                        <div class="footer-top__item-box">
+                            <div class="footer-top__item-img">
+                                <img src="images/footer/tel.png" alt="">
+                            </div>
+                            <div class="footer-top__item-links footer-top__item-text">
+                                <a href="tel:+7727398571">+7 727 398 57 31</a>
+                                <a href="tel:+77764876454">+7 776 487 64 54</a>
+                            </div>
+                        </div>
+                        <div class="footer-top__item-box footer-top__item-box--location">
+                            <div class="footer-top__item-img">
+                                <img src="images/footer/loc.png" alt="">
+                            </div>
+                            <div class="footer-top__item-text footer-top__item-text--location">
+                                Алматы қаласы, Қалқаман ықшам ауданы – 3, Сейітов көшесі – 11.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-top__item footer-top__item--button">
+                    <div class="footer-top__item-circle" id="scroll-up"></div>
+                    <div class="footer-top__item-circle-bg"></div>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <div class="footer-middle__item footer-middle__item--logo">
+                    <div class="footer-middle__item-logo">
+                        <img src="images/footer/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-middle__item">
+                    <div class="footer-middle__item-stat">
+                        <div class="footer-middle__item-stat-name">
+                            САНАҚ
+                        </div>
+                        <div class="footer-middle__item-images">
+                            <a href="#">
+                                <img src="images/footer/left.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="images/footer/middle.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="images/footer/right.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-middle__item footer-middle__item--socials">
+                    <div class="footer-middle__item-socials socials">
+                        <a href="#" class="socials__link">
+                            <svg class="socials__svg socials__svg--whap" fill="#fff" viewBox="0 0 22 22"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0027 0H10.9973C4.93213 0 0 4.9335 0 11C0 13.4062 0.7755 15.6365 2.09413 17.4474L0.72325 21.5339L4.95138 20.1823C6.69075 21.3345 8.76562 22 11.0027 22C17.0679 22 22 17.0651 22 11C22 4.93488 17.0679 0 11.0027 0ZM17.4034 15.5334C17.138 16.2827 16.0847 16.9042 15.2446 17.0857C14.6699 17.2081 13.9191 17.3057 11.3919 16.258C8.15925 14.9188 6.0775 11.6339 5.91525 11.4207C5.75988 11.2076 4.609 9.68138 4.609 8.10287C4.609 6.52437 5.41062 5.75575 5.73375 5.42575C5.99913 5.15488 6.43775 5.03113 6.8585 5.03113C6.99463 5.03113 7.117 5.038 7.227 5.0435C7.55013 5.05725 7.71237 5.0765 7.9255 5.58663C8.19088 6.226 8.83712 7.8045 8.91412 7.96675C8.9925 8.129 9.07088 8.349 8.96088 8.56213C8.85775 8.78213 8.767 8.87975 8.60475 9.06675C8.4425 9.25375 8.2885 9.39675 8.12625 9.5975C7.97775 9.77213 7.81 9.95913 7.997 10.2823C8.184 10.5985 8.83025 11.6531 9.78175 12.5001C11.0096 13.5932 12.0051 13.9425 12.3612 14.091C12.6266 14.201 12.9429 14.1749 13.1368 13.9686C13.3829 13.7033 13.6867 13.2633 13.9961 12.8301C14.2161 12.5194 14.4939 12.4809 14.7854 12.5909C15.0824 12.694 16.654 13.4709 16.9771 13.6317C17.3003 13.794 17.5134 13.871 17.5917 14.0071C17.6687 14.1433 17.6687 14.7826 17.4034 15.5334Z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="socials__link">
+                            <svg class="socials__svg socials__svg--face" fill="#fff" viewBox="0 0 22 22"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.6644 3.65292H16.6728V0.154917C16.3263 0.10725 15.1346 0 13.7468 0C10.851 0 8.86737 1.82142 8.86737 5.16908V8.25H5.67188V12.1605H8.86737V22H12.7852V12.1614H15.8515L16.3382 8.25092H12.7843V5.55683C12.7852 4.42658 13.0895 3.65292 14.6644 3.65292Z" />
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="22" height="22" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a class="socials__link" href="#">
+                            <svg class="socials__svg socials__svg--inst" fill="#fff" viewBox="0 0 22 22"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11 6.53125C8.51211 6.53125 6.48828 8.55508 6.48828 11.043C6.48828 13.5309 8.51211 15.5547 11 15.5547C13.4879 15.5547 15.5117 13.5309 15.5117 11.043C15.5117 8.55508 13.4879 6.53125 11 6.53125ZM11 6.53125C8.51211 6.53125 6.48828 8.55508 6.48828 11.043C6.48828 13.5309 8.51211 15.5547 11 15.5547C13.4879 15.5547 15.5117 13.5309 15.5117 11.043C15.5117 8.55508 13.4879 6.53125 11 6.53125ZM18.7773 0H3.22266C1.44375 0 0 1.44375 0 3.22266V18.7773C0 20.5562 1.44375 22 3.22266 22H18.7773C20.5562 22 22 20.5562 22 18.7773V3.22266C22 1.44375 20.5562 0 18.7773 0ZM11 16.8438C7.80317 16.8438 5.19922 14.2398 5.19922 11.043C5.19922 7.84605 7.80317 5.24219 11 5.24219C14.1968 5.24219 16.8008 7.84605 16.8008 11.043C16.8008 14.2398 14.1968 16.8438 11 16.8438ZM18.0898 5.24219C17.3809 5.24219 16.8008 4.66211 16.8008 3.95312C16.8008 3.24414 17.3809 2.66406 18.0898 2.66406C18.7988 2.66406 19.3789 3.24414 19.3789 3.95312C19.3789 4.66211 18.7988 5.24219 18.0898 5.24219ZM11 6.53125C8.51211 6.53125 6.48828 8.55508 6.48828 11.043C6.48828 13.5309 8.51211 15.5547 11 15.5547C13.4879 15.5547 15.5117 13.5309 15.5117 11.043C15.5117 8.55508 13.4879 6.53125 11 6.53125ZM11 6.53125C8.51211 6.53125 6.48828 8.55508 6.48828 11.043C6.48828 13.5309 8.51211 15.5547 11 15.5547C13.4879 15.5547 15.5117 13.5309 15.5117 11.043C15.5117 8.55508 13.4879 6.53125 11 6.53125ZM11 6.53125C8.51211 6.53125 6.48828 8.55508 6.48828 11.043C6.48828 13.5309 8.51211 15.5547 11 15.5547C13.4879 15.5547 15.5117 13.5309 15.5117 11.043C15.5117 8.55508 13.4879 6.53125 11 6.53125Z" />
+                            </svg>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom__info">
+                    © 2009-2021 Qazaquni.kz ақпараттық агенттігі, ҚР Инвестициялар және даму министрлігінің № 15439-ИА
+                    куәлігі негізінде авторлық құқықтар және жанама құқықтар толық сақталады.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src='js/main.min.js'></script>
+</body>
+
+</html>
